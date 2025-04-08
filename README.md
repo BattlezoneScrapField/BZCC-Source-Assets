@@ -1,4 +1,7 @@
-# Battlezone: Combat Commander Source Material Mods End User Licence Agreement
+# Battlezone: Combat Commander | Source Material Mods End User Licence Agreement
+
+### Source Material Download
+- https://bzscrap.org/BZCC/CombatCommanderSourceMaterialModsv2.zip
 
 <img src="./bzcc.jpg" width="65%">
 
