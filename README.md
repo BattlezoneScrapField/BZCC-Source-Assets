@@ -1,13 +1,13 @@
 # Battlezone: Combat Commander | Source Material Mods End User Licence Agreement
 
-### Source Material Download
+### Source Material Download 🔗
 - https://bzscrap.org/BZCC/CombatCommanderSourceMaterialModsv2.zip
 
 <img src="./bzcc.jpg" width="65%">
 
-To read more, please visit https://mods.battlezone.com/. 📑
+To learn more about this EULA, please read https://battlezonecombatcommander.com/en/news/715 or visit https://mods.battlezone.com/.
 
-## Introduction
+## Introduction 📑
 This licence agreement (“Mod Licence”) is a contract between you, the person using the Source (as defined below) and Rebellion Interactive Limited (“Rebellion”). Your installation or use of the Source indicates your acceptance of the terms of this Mod Licence.
 
 The “Source” consists of the art assets relating to Battlezone: Combat Commander (the “Game”) which are explicitly provided for download at mods.battlezone.com for the purpose of modding the Game.
