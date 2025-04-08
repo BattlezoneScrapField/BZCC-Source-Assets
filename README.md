@@ -1,6 +1,7 @@
 # Battlezone: Combat Commander | Source Material Mods End User Licence Agreement
 
 ### Source Material Download 🔗
+The source material `.zip` file-size was too large to commit directly to the repo. Please visit the BZscrap URL below:
 - https://bzscrap.org/BZCC/CombatCommanderSourceMaterialModsv2.zip
 
 <img src="./bzcc.jpg" width="65%">
