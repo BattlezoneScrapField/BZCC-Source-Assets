@@ -1,0 +1,103 @@
+[GameObjectClass]
+classLabel = "animal"
+geometryName = "rhino_skel.fbx"
+
+animCount = 6
+
+animName1 = "idle"
+animFile1 = "rhino_idle.fbx"
+
+animName2 = "walk"
+animFile2 = "rhino_walk.fbx"
+
+animName3 = "run"
+animFile3 = "rhino_walk.fbx"
+
+animName4 = "curious"
+animFile4 = "rhino_growl.fbx"
+
+animName5 = "attack"
+animFile5 = "rhino_eat.fbx"
+
+animName6 = "death"
+animFile6 = "rhino_death.fbx"
+
+//animName7 = "fall"
+//animFile7 = "rhino_fall.fbx"
+
+
+//geometryScale = 1.0
+scrapCost = 0
+scrapValue = 0
+pilotCost = 1
+maxHealth = 7000
+maxAmmo = 5000
+unitName = "Ice Rhino"
+aiName = "LandAnimalProcess"
+heatSignature = 0.0
+imageSignature = 10.3
+radarSignature = 10.0
+
+armorClass = H
+
+[CraftClass]
+braccelFactor = 0.08
+velFactor = 0.4
+steerFactor = 1
+omegaFactor = 0.4
+strafeFactor = 0.1
+
+GotoTaskHasleader = false
+PathingType = 2
+AvoidType = 1
+
+LandAnimalTCrowdedDist = 60.0	  // for LandAnimalProcess.cpp. How close to other animals before moving away
+
+[LandCreature]
+animRate = 10.0
+velocJump = 2
+velocForward = 10.0
+//Asscelaration in Gravities
+accelThrust = 0.7
+
+// in degrees/sec
+alphaSteer = 20.0
+omegaSpin =  60.0
+omegaTurn = 150.0
+
+GroundInteractHeight = 0.3f
+
+burnSound1 = "rhin07.wav"
+burnSound2 = "rhin08.wav"
+
+crushSound = "rhinocry.wav"
+
+curiousSound1 = "rhin02.wav"
+curiousSound2 = "rhin04.wav"
+curiousSound3 = "rhin04b.wav"
+curiousSound4 = "rhin06.wav"
+
+dieSound1  = "rhin08.wav"
+dieSound2  = "rhin08.wav"
+dieSound3  = "rhin08.wav"
+dieSound4  = "rhin08.wav"
+dieSound5  = "rhin08.wav"
+
+eatSound1 = "rhin02.wav"
+eatSound2 = "rhin04.wav"
+eatSound3 = "rhin04b.wav"
+eatSound4 = "rhin06.wav"
+
+painSound1 = "rhin07.wav"
+painSound2 = "rhin07.wav"
+painSound3 = "rhin07.wav"
+painSound4 = "rhin07.wav"
+painSound5 = "rhin07.wav"
+painSound6 = "rhin07.wav"
+
+jumpSound  = "rhin01.wav"
+landSound  = "rhin01.wav"
+stepSound  = "rhin01b.wav"
+
+leftfootpiece = "lfoot"
+rightfootpiece = "rfoot"

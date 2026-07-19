@@ -1,0 +1,31 @@
+[GameObjectClass]
+geometryName = "cbscom00.fbx"
+classLabel = "computer"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 50000
+maxAmmo = 0
+unitName = "tunnel"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 5.0
+AllowUndergroundSpawn = true
+hitType = "B"
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnicyancore"
+lightHard2 = "hp_light_2"
+lightName2 = "omnicyancore"
+lightHard3 = "hp_light_3"
+lightName3 = "omniredmag"
+lightHard4 = "hp_light_4"
+lightName4 = "omniredmag"
+
+[ComputerClass]
+harpoint1 = "hp_snap_3"
+harpoint2 = "hp_snap_4"
+NozzleOdf = "ibnozz01"
+
+
+[BuildingClass]

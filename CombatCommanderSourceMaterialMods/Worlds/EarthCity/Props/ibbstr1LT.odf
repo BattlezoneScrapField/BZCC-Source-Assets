@@ -1,0 +1,6 @@
+[GameObjectClass]
+baseName = "ibbstr"
+geometryName = "ibbstrLT01.fbx"
+classLabel = "ibbstr1"
+
+[BuildingClass]

@@ -1,0 +1,64 @@
+[GameObjectClass]
+baseName = "cbturr01"
+geometryName = "cbturrtap.fbx"
+classLabel = "turret"
+scrapCost = 8
+scrapValue = 0
+maxHealth = 3000
+maxAmmo = 10000
+unitName = "turret"
+aiName = "GunTowerFriend"
+aiName2 = "GunTowerEnemy"
+powerCost = 0
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 5.0
+UseVehicleCrashOnDeath = false
+explosionName = "xcoreturrxpl"
+isAssault = 1
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnicyancore"
+
+armorClass = L
+
+weaponMask = 00011
+weaponHard1 = "hp_gun_1"
+weaponName1 = "gcoretur"
+weaponAssault1 = 0
+recoilName1 = "recoil"
+weaponHard2 = "hp_gun_2"
+weaponName2 = "gcoretur"
+weaponAssault2 = 0
+
+turretCount = 3
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+turretName3 = "hp_eyepoint"
+
+[BuildingClass]
+soundThrust = "cceng.wav"
+
+[CraftClass]
+rangeScan = 200
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 1.5
+steerFactor = 0.5
+engageRange = 200
+ejectRatio = 0
+
+[TurretCraftClass]
+detectRange = 210
+omegaTurret = 2.0
+
+
+
+
+damageEffect1 = "NULL"
+damageEffect2 = "NULL"
+damageEffect3 = "NULL"
+damageEffect4 = "NULL"
+
+

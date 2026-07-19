@@ -1,0 +1,23 @@
+[GameObjectClass]
+classLabel = "i76building"
+geometryName = "rhino_fall.fbx"
+//geometryScale = 2.0
+
+animCount = 1
+animName1 = "fall"
+animFile1 = "rhino_fall.fbx"
+
+scrapCost = 0
+scrapValue = 0
+pilotCost = 1
+maxHealth = 10000
+maxAmmo = 0
+addAmmo = 0
+unitName = "Ice Rhino"
+aiName = ""
+aiName2 = ""
+heatSignature = 0.0
+imageSignature = 10.3
+radarSignature = 10.0
+
+armorClass = H

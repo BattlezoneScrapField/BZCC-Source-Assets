@@ -1,0 +1,17 @@
+[GameObjectClass]
+geometryName = "dewcor01.fbx"
+classLabel = "terrain"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Wall Corner"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 5.0
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnicyancore"
+
+[BuildingClass]

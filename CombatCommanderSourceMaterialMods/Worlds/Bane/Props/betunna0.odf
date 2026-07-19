@@ -1,0 +1,23 @@
+[GameObjectClass]
+geometryName = "betunn00.fbx"  //bzcc "betunna0.xsi"
+classLabel = "i76building"
+animCount = 1
+animName1 = "crumble"
+animFile1 = "betunna0.xsi"
+collisionName = "betunna0_col.fbx"
+//RunAnimation = "crumble"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 95000
+maxAmmo = 0
+unitName = "Cave"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 5.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+ownsTerrain = 1
+
+[BuildingClass]

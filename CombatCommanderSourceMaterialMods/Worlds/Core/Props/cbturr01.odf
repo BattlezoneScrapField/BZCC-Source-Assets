@@ -1,0 +1,29 @@
+[GameObjectClass]
+geometryName = "cbturr01.fbx"
+classLabel = "powered" //turret
+collisionRadius = 10.0
+scrapCost = 50
+powerCost = 0
+scrapValue = 0
+maxHealth = 10000
+maxAmmo = 10000 // 0 is *not* treated as infinite ammo!
+unitName = "Turret"
+//aiName = "GunTowerFriend"
+//aiName2 = "GunTowerEnemy"
+heatSignature = 0.8
+imageSignature = 3.0
+radarSignature = 1.0
+AllowUndergroundSpawn = true
+isAssault = 1
+
+armorClass = L
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnicyancore"
+
+[PoweredBuildingClass]
+powerTap1 = "HP_TAP_1"
+powerName = "cbturrtap"
+detectRange = 100
+
+[BuildingClass]

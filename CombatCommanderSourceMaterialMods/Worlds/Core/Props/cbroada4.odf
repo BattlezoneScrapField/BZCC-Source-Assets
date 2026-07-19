@@ -1,0 +1,68 @@
+[GameObjectClass]
+geometryName = "cbroadA4.fbx"
+classLabel = "i76building"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Tunnel"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+
+collisionRadius = 5.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+
+AllowUndergroundSpawn = true
+
+animCount = 1
+animName1 = "collapse"
+animFile1 = "cbroadA4.fbx"
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnimagentatower"
+lightHard2 = "hp_light_2"
+lightName2 = "omnimagentatower"
+lightHard3 = "hp_light_3"
+lightName3 = "omnimagentatower"
+lightHard4 = "hp_light_4"
+lightName4 = "omnimagentatower"
+
+//Todo: Add smoke Fx that last 20 seconds then stop.
+EffectHard1 = "hp_emit_1"
+EffectName1 = "cbroada4.smoke"
+EffectHard2 = "hp_emit_2"
+EffectName2 = "cbroada4.smoke"
+EffectHard3 = "hp_emit_3"
+EffectName3 = "cbroada4.smoke"
+EffectHard4 = "hp_emit_4"
+EffectName4 = "cbroada4.smoke"
+
+[BuildingClass]
+
+
+[Smoke]
+simulateBase = "sim_smoke"
+lifeTime = 3.0
+renderBase = "draw_emit"
+emitName = "cbroada4.smokepuff"
+emitDelay = 0.1
+emitVelocity = "1.0 1.0 1.0" 
+emitVariance = "3.0 3.0 3.0"
+emitInherit = "0.8 0.8 0.8"
+
+[Smokepuff]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "smoke2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 127 127 127 200"
+finishColor = "127 127 127 0"
+startRadius = 8.0
+finishRadius = 16.0
+animateTime = 2.0
+rotateTime = 20
+BottomInteractsWithTerrain = false

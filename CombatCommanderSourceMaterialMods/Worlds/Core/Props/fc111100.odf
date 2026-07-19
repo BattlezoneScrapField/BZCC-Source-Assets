@@ -1,0 +1,114 @@
+//Core service bot vehicle - treated as Scion (f) unit
+[GameObjectClass]
+baseName = "fc111100"
+classLabel = "wingman"
+geometryName = "cc111100.fbx"
+animCount = 3
+animName1 = "forward"
+animFile1 = "cc1111sf.fbx"
+animName2 = "neutral"
+animFile2 = "cc1111sn.fbx"
+animName3 = "reverse"
+animFile3 = "cc1111sr.fbx"
+cockpitName = "cc1111_cockpit.fbx"
+scrapValue = 1
+scrapCost = 55
+buildTime = 15.0
+maxHealth = 1800
+maxAmmo = 2000
+addAmmo = 5
+unitName = "CC111100"
+aiName = "TankFriend"
+aiName2 = "TankEnemy"
+//unitIcon = "icon_fc111100.tga"
+//unitStatus = "wire_fc111100.tga"
+heatSignature = 1.2
+imageSignature = 3.0
+radarSignature = 0.2
+cansnipe = 0
+armorClass = L
+
+scrapClass1 = "apcserv"
+scrapClass2 = "apcserv"
+scrapClass3 = "apcserv"
+
+/////// weapons ///////////////////
+//patch 1.3 weapons
+weaponMask = 00011
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "ggauss_c"  //"gcoretur"
+weaponAssault1 = 0
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "ggauss_c"  //"gcoretur"
+weaponAssault2 = 0
+
+/////////LIGHTS AND EFFECTS//////////////////
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"  
+LightsOnlyWhenPiloted = true
+
+effectHard1 = "hp_dust_1"
+effectName1 = "dusttrail"
+effectMinAltitude1 = 1.0
+effectMaxAltitude1 = 6.0
+effectFlags1 = 2147483135
+
+////////////////////////////////////////////////////////////////
+[CraftClass]
+rangeScan = 250.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 132 //originally 120 - p1.3
+ejectRatio = 0  //never ejects a pilot
+braccelFactor = 0.03
+velFactor = 0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.2
+avoidSpeed = 20;
+topSpeed = 30;
+
+////////Messages////////////////
+//scion scout - xon
+selectWaitMsg = "fvscout04.wav"  //"sitgreen.wav"
+selectAttackMsg = "fvscout01.wav"  //"sitgreen.wav"
+selectFollowMsg = "fvscout03.wav"  //"sitgreen.wav"
+selectGoMsg = "fvscout02.wav"  //"sitgreen.wav"
+selectOtherMsg = "fvscout04.wav"  //"sitgreen.wav"
+holdMsg = "fvscout12.wav"
+goMsg = "fvscout05.wav"  //"allgreen.wav"
+attackMsg = "fvscout06.wav"  //"allgreen.wav"
+followMeMsg = "fvscout08.wav"  //"allgreen.wav"
+followMsg = "fvscout03.wav"  //"allgreen.wav"
+repairMsg = "fvscout09.wav"  //"avtankv8.wav"
+reloadMsg = "fvscout09.wav"  //"avtankv9.wav"
+rescueMsg = "fvscout10.wav"  //"avtankvc.wav"
+recycleMsg = "fvscout11.wav"  //"avtankvd.wav"
+otherMsg = "fvscout04.wav"   //"avtankvn.wav"
+user1Msg = ""  //"avtankva.wav"  
+killedMsg = "fvscout07.wav"  //"avtankv3.wav"
+diedMsg = ""  //"abetty3.wav"
+
+//////////////////////////////////////////////////////////////////
+[HoverCraftClass]
+velocForward = 28.5 // []
+velocReverse = 15.0 // []
+velocStrafe = 16.0 // []
+accelThrust = 17.5 //acceleration []
+accelDragStop = 6.0 //how fast it stops once hands are off controls []
+accelJump = 15.0 // []
+setAltitude = 1.0 // how high off the ground
+alphaTrack = 21.0 //springs speed it rights itself []
+alphaDamp = 8.0 //shocks []
+pitchPitch = 0.25 //nose up []
+pitchThrust = 0.1 //nose down []
+rollStrafe = 0.08 //rolls while strafing []
+omegaSpin = 5.0 //spinning in place speed []
+omegaTurn = 2.3 //turning while moving speed []
+alphaSteer = 7.0 //how fast it responds to steering []
+rollSteer = 0.08 //rolls while steering []
+
+soundThrust = "cceng.wav"
+soundTurbo = "avtanke3.wav"

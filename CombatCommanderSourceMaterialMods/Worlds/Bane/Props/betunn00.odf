@@ -1,0 +1,32 @@
+[GameObjectClass]
+geometryName = "betunn00.fbx"
+classLabel = "i76building"
+animCount = 1
+animName1 = "crumble"
+animFile1 = "betunna0.xsi"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 95000
+maxAmmo = 0
+unitName = "Cave"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 5.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+ownsTerrain = 1
+clipDepth = 0
+
+[BuildingClass]
+// justFlat = 1
+
+tunnelCount = 1
+bldEdge = "wwww"
+
+tunnel01X0 = 0 // start point from the left of the building
+tunnel01Z0 = 2 // start point from the top of the building
+tunnel01DX = 28  // width from left to right
+tunnel01DZ = 12  // width from top to bottom
+tunnel01Edge = "wtwt" // wall-entrance-wall-entrance

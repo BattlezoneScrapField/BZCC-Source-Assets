@@ -1,0 +1,18 @@
+[GameObjectClass]
+geometryName = "dospik03.fbx"
+classLabel = "i76Building"
+geometryScale = 1.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 10000
+maxAmmo = 0
+unitName = ""
+heatSignature = 0.8
+imageSignature = 0.0
+radarSignature = 0.0
+canDetect = 0
+canInteract = 0
+ownsTerrain = 1
+
+[BuildingClass]
+bldEdge = "wwww"

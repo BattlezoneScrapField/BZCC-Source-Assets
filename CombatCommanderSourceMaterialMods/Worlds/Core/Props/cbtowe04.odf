@@ -1,0 +1,22 @@
+[GameObjectClass]
+baseName = "cbtowe01"
+geometryName = "cbtowe04.fbx"
+classLabel = "i76building"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Structure"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 5.0
+AllowUndergroundSpawn = true
+ownsTerrain=1
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnicyancore"
+
+[BuildingClass]
+loadAsDummy=1
+dummyVersion=1103

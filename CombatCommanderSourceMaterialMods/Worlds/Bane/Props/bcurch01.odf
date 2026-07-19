@@ -1,0 +1,26 @@
+[GameObjectClass]
+geometryScale = 0.5
+geometryName = "bcurch01.fbx"
+classLabel = "plant"
+collisionRadius = 1.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 1000
+maxAmmo = 0
+unitName = "Urchin"
+heatSignature = 0.1
+imageSignature = 1.0
+radarSignature = 0.2
+explosionName = "xplnxpl"
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+
+[BuildingClass]
+soundAmbient = "mire2.wav"
+
+[PlantClass]
+standUp = 1
+
+darkRadius = 16         // 28m radius
+darkScale = .6  // 1/8 of the original intensity

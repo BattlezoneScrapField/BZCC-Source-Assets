@@ -1,0 +1,99 @@
+[GameObjectClass]
+classLabel = "seeker"
+geometryName = "coseeker00.fbx"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 300
+maxAmmo = 100
+unitName = "Guardian Mine"
+heatSignature = 10.0
+imageSignature = 10.0
+radarSignature = 10.0
+canCollide = 1
+
+///////// LIGHTS & EFFECTS /////////
+effectHard1 = "hp_emit_1"
+effectName1 = "cseeker.pinkstay"  //"cseeker.pinkball"  //"cseeker.render"
+
+[pinkball]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "cseeker.light"
+renderName2 = "cseeker.flame"
+renderName3 = "cseeker.smoke"
+
+//////////////////////////////////////////////////////////////////////////
+[MineClass]
+lifeSpan = 20
+xplBlast = "xcseek"
+
+//////////////////////////////////////////////////////////////////////////
+[SeekerClass]
+searchRange = 500.0
+floatVeloc = 24.0
+setAltitude = 1.5
+
+/////////////////////////////////////////////////////////////////////////
+[Render]
+renderBase = "draw_light"
+lightType = "point"
+startColor = "127 255 0 0"
+finishColor = "127 255 0 255"
+startRadius = 5.0
+finishRadius = 20.0
+animateTime = 0.2
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
+lensFlare = 0
+
+[Light]
+renderBase = "draw_light"
+startColor = "250 0 200 100"
+finishColor = "255 0 100 100"
+startRadius = 1.0
+finishRadius = 3.0
+animateTime = 0.5
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
+lensFlare = 0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "250 0 200 200"
+finishColor = "200 0 100 0"
+startRadius = 0.5
+finishRadius = 1.0
+animateTime = 0.1
+rotationRate = 5.0
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 0.1
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "0 80 255 64"
+finishColor = "255 0 200 0"
+startRadius = 0.5
+finishRadius = 1.25
+animateTime = 0.1
+rotationRate = 5.0
+emitDelay = 0.005
+emitVelocity = "0.0 20.0 0.0"
+emitVariance = "4.0 4.0 4.0"
+emitLife = 0.1
+
+[pinkstay]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"  //"plasma.tga"  //"lighthalo.tga"  //
+textureBlend = "one one modulate"
+startColor = "255 50 250 200"
+finishColor = "255 50 200 255"
+startRadius = 5.0
+finishRadius = 5.0
