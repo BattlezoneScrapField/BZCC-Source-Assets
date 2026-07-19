@@ -1,0 +1,12 @@
+[emit_orangeblink]
+renderBase = "draw_twirl_trail"
+emitDelay = 2.2  //1.0
+emitLife = 1.0  //0.5
+textureName = "lightflare.tga"  //"plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 100 0 255"
+finishColor = "255 50 0 255"
+startRadius = 3.0
+finishRadius = 0.5
+animateTime = 1.0
+rotationRate = 10.0

@@ -1,0 +1,26 @@
+[emit_contrail2]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 63"
+finishColor = "127 127 127 0"
+startRadius = 0.4
+finishRadius = 1.0
+segmentTime = 2.0
+textureRate = 0.05
+animateTime = 2.0
+
+//renderBase = "draw_twirl_trail"
+//emitDelay = 0.02
+//emitDelayVar = 0.03
+//emitVelocity = "0.0 0.0 -10.0"
+//emitVariance = "4.0 2.0 4.0"
+//emitLife = 3.0  //0.7
+//textureName = "smoke.tga"
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+//startColor = "255 200 100 20"
+//finishColor = "200 200 255 0"
+//startRadius = 1
+//finishRadius = 6  //3
+//animateTime = 3.0  //2.0
+//rotationRate = 3.0  //2.0

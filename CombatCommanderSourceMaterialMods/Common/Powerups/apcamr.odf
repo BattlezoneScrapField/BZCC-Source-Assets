@@ -1,0 +1,20 @@
+[GameObjectClass]
+geometryName = "apcamr00.fbx"
+classLabel = "camerapod"
+scrapCost = 1
+scrapValue = 0
+maxHealth = 200
+maxAmmo = 0
+
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+
+unitName = "Camera Pod"
+aiName = "CameraPodProcess"
+
+[CameraPodClass]
+omegaSpin = 1.0
+rangeScan = 0.0
+periodScan = 0.0
+

@@ -1,0 +1,20 @@
+[GameObjectClass]
+geometryName = "burns_ship.fbx"
+geometryScale = 1.0
+classLabel = "artifact"
+scrapCost = 1
+scrapValue = 0
+maxHealth = 1000
+maxAmmo = 0
+unitName = "Scion Chariot"
+aiName = "PowerUpProcess"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+
+canCollide = 1
+
+[CameraPodClass]
+omegaSpin = 0.0
+rangeScan = 0.0
+periodScan = 0.0

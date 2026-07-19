@@ -1,0 +1,8 @@
+[emit_aircraft1]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"  //"lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 255"
+finishColor = "0 127 255 255"
+startRadius = 3.0
+finishRadius = 3.0

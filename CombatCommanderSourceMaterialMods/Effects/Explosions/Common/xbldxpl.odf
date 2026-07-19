@@ -1,0 +1,145 @@
+// =================
+// VEHICLE EXPLOSION
+// =================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 7
+
+particleClass1 = "xbldxpl.flame1"
+particleCount1 = 25 //30
+particleVeloc1 = "8.0 6.0 8.0"
+particleBias1 = "0.0 4.0 0.0"
+
+particleClass2 = "xbldxpl.flame2"
+particleCount2 = 25 //50
+particleVeloc2 = "50.0 5.0 50.0"
+particleBias2 = "0.0 3.0 0.0"
+
+particleClass3 = "xbldxpl.smoke"
+particleCount3 = 25
+particleVeloc3 = "10.0 5.0 10.0"
+particleBias3 = "0.0 3.0 0.0"
+
+particleClass4 = "xbldxpl.light"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xbldxpl.spark"
+particleCount5 = 20 //40
+particleVeloc5 = "200.0 100.0 200.0"
+particleBias5 = "0.0 100.0 0.0"
+particlePosVar5 = "10.0 0.0 10.0"
+
+particleClass6 = "xbldxpl.shock"
+particleCount6 = 1
+particleVeloc6 = "0.0 0.0 0.0"
+
+particleClass7 = "xbldxpl.ring"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+
+explSound = "xbuild.wav"
+damageRadius = 30.0
+damageValue(N) = 100
+damageValue(L) = 70
+damageValue(H) = 40
+damageValue(S) = 70
+damageValue(D) = 100
+damageValue(A) = 40
+kickRadius = 60.0
+kickOmega = 5.0
+kickVeloc = 5.0
+
+[Flame1]
+simulateBase = "sim_smoke"
+lifeTime = 2.5
+renderBase = "draw_twirl"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = " 255 255 200 255"
+finishColor = "255 0 0 0"
+startRadius = 3.0
+finishRadius = 5.0
+animateTime = 2.5
+rotationRate = 2.0
+
+[Flame2]
+simulateBase = "sim_smoke"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = " 255 255 200 255"
+finishColor = "255 0 0 0"
+startRadius = 3.0
+finishRadius = 1.5
+animateTime = 1.5
+rotationRate = 2.0
+
+[Smoke]
+simulateBase = "sim_smoke"
+lifeTime = 7.0
+renderBase = "draw_twirl"
+textureName = "smoke2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 0 0 0 255"
+finishColor = "0 0 0 0"
+startRadius = 5.0
+finishRadius = 8.0
+animateTime = 7.0
+rotationRate = 1.0
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 2.5 //5.0
+renderBase = "draw_light"
+startColor = "255 255 0 1020"
+finishColor = "255 0 0 0"
+startRadius = 150.0
+finishRadius = 50.0
+animateTime = 2.5 //5.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
+lensFlare = 0
+
+[Spark]
+simulateBase = "sim_ember"
+lifeTime = 0.2
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 0.0
+trailTime = 0.2
+segmentTime = 0.2
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.4
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 127 0 63"
+finishColor = "255 0 0 0"
+startRadius = 6.0
+finishRadius = 60.0
+animateTime = 0.4
+latitudeBands = 16
+longitudeSegments = 32
+
+[Ring]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_planar"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 127"
+finishColor = "255 0 0 0"
+startRadius = 10.0
+finishRadius = 100.0
+animateTime = 1.0

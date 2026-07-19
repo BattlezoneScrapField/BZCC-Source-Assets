@@ -1,0 +1,54 @@
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "emit_firelight.light1"
+renderName2 = "emit_firelight.light2"
+
+[Light1]
+simulateBase = "sim_smoke"
+lifeTime = 1e6
+renderBase = "draw_emit"
+emitName = "emit_firelight.lightA"
+emitDelay = 0.3
+emitDelayVar = 0.15
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Light2]
+startDelay = 0.25
+simulateBase = "sim_smoke"
+lifeTime = 1e6
+renderBase = "draw_emit"
+emitName = "emit_firelight.lightB"
+emitDelay = 0.3
+emitDelayVar = 0.15
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[LightA]
+simulateBase = "sim_null"
+lifeTime = 0.25
+renderBase = "draw_light"
+startColor = "255 255 200 250"
+finishColor = "255 255 200 500"
+startRadius = 20.0
+finishRadius = 30.0
+animateTime = 0.25
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
+lensFlare = 0
+
+[LightB]
+simulateBase = "sim_null"
+lifeTime = 0.25
+renderBase = "draw_light"
+startColor = "255 255 200 500"
+finishColor = "255 255 200 250"
+startRadius = 30.0
+finishRadius = 20.0
+animateTime = 0.25
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
+lensFlare = 0

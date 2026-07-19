@@ -1,0 +1,8 @@
+[emit_cyanstay]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"  //"plasma.tga"
+textureBlend = "one one modulate"
+startColor = "100 240 240 255"
+finishColor = "100 240 240 255"
+startRadius = 2.0
+finishRadius = 2.0

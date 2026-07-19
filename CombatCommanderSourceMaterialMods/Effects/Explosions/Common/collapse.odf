@@ -1,0 +1,107 @@
+// =================
+// VEHICLE EXPLOSION
+// =================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 4
+
+particleClass1 = "collapse.explode"
+particleCount1 = 1
+particleVeloc1 = "1.0 1.0 1.0"
+
+particleClass2 = "collapse.smokecenter"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "collapse.embercore"
+particleCount3 = 2
+particleVeloc3 = "0.0 2.0 0.0"
+particlePosVar3 = "5.0 0.0 5.0"
+
+particleClass4 = "collapse.smoke"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+explSound = "xms2.wav"
+damageRadius = 0.0
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+
+[explode]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_emit"
+emitName = "collapse.explodepuffs"
+emitDelay = 0.1
+emitVelocity = "3.0 3.0 3.0"
+emitVariance = "5.0 5.0 5.0"
+
+[explodepuffs]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = " 255 255 200 255"
+finishColor = "255 0 0 0"
+startRadius = 10.0
+finishRadius = 5.0
+animateTime = 1.0
+rotationRate = 20.0
+
+[smokecenter]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "smoke2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 5 5 5 150"
+finishColor = "10 10 10 0"
+startRadius = 15.0
+finishRadius = 30.0
+animateTime = 2.0
+rotationRate = 10.0
+
+[embercore]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "smoke2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 127 64 0 200"
+finishColor = "64 0 0 0"
+startRadius = 2.0
+finishRadius = 3.0
+animateTime = 2.0
+rotationRate = 20.0
+
+[smoke]
+simulateBase = "sim_null"
+lifeTime = 1.5
+renderBase = "draw_emit"
+emitName = "collapse.Smokeemit"
+emitDelay = 0.05 //0.03
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "80.0 2.0 80.0"
+emitPosVariance = "10.0 0.0 10.0"
+
+[Smokeemit]
+simulateBase = "sim_dust"
+lifeTime = 3.0
+renderBase = "draw_twirl"
+textureName = "smoke2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 40 40 40 180"
+finishColor = "5 5 5 0"
+startRadius = 8.0
+finishRadius = 5.5
+animateTime = 3.0
+rotationRate = 1.0
+useTerrainColor = 0.9

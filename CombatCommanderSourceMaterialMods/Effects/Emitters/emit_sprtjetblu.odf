@@ -1,0 +1,9 @@
+[emit_sprtjetblu]
+renderBase = "draw_sprite"
+textureName = "sprtjetblu.png"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 1.0
+finishRadius = 1.0
+//rotationRate = 10.0

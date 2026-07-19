@@ -1,0 +1,18 @@
+[dusttrailrec]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.03
+emitDelayVar = 0.03
+emitVelocity = "0.0 1.0 0.0"
+emitVariance = "4.0 4.0 4.0"
+emitPosVariance = "5.0 0.0 0.0"
+emitLife = 3.0  //2.0
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+useTerrainColor = 0.9
+startColor = "255 255 255 20"
+finishColor = "255 255 255 0"
+startRadius = 1.0
+finishRadius = 3.0
+animateTime = 2.0
+rotationRate = 2.0
+

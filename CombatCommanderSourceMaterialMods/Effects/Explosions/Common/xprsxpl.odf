@@ -1,0 +1,74 @@
+// ================
+// PERSON EXPLOSION
+// ================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 3
+
+particleClass1 = "xprsxpl.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleInherit1 = "0.5 0.5 0.5"
+
+particleClass2 = "xprsxpl.chunk1"
+particleCount2 = 5 //10
+particleVeloc2 = "7.0 7.0 7.0"
+particleBias2 = "0.0 3.0 0.0"
+particlePosVar2 = "2.0 0.0 2.0"
+particleInherit2 = "0.8 0.8 0.8"
+
+particleClass3 = "xprsxpl.chunk2"
+particleCount3 = 5
+particleVeloc3 = "5.0 5.0 5.0"
+particleBias3 = "0.0 2.0 0.0"
+particlePosVar3 = "2.0 0.0 2.0"
+particleInherit3 = "0.8 0.8 0.8"
+
+explSound = NULL
+damageRadius = 0.0
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[Core]
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "127 0 0 255"
+finishColor = "127 0 0 0"
+startRadius = 1.0
+finishRadius = 3.0
+animateTime = 0.5
+
+[Chunk1]
+simulatebase = "sim_chunk"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "127 0 0 255"
+finishColor = "127 0 0 0"
+startRadius = 0.1
+finishRadius = 0.1
+animateTime = 2.0
+rotationRate = 5.0
+
+[Chunk2]
+simulatebase = "sim_chunk"
+lifeTime = 2.5
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "127 0 0 255"
+finishColor = "127 0 0 0"
+startRadius = 0.15
+finishRadius = 0.15
+animateTime = 2.5
+rotationRate = 3.0

@@ -1,0 +1,24 @@
+[GameObjectClass]
+geometryName = "fostand01.fbx"
+classLabel = "powerplant"
+animCount = 1
+animName1 = "loop"
+animFile1 = "fostand01.fbx"
+collisionRadius = 1.0
+powerCost = 0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Base"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 1
+ownsTerrain = 1
+canCollide = 0
+permanent = 1
+
+armorClass = H
+
+[BuildingClass]

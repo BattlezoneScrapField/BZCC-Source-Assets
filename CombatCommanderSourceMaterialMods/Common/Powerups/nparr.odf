@@ -1,0 +1,12 @@
+[GameObjectClass]
+geometryName = "nparr00.x"
+classLabel = "i76sign"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Pylon"
+heatSignature = 0.02
+imageSignature = 0.02
+radarSignature = 0.01
+

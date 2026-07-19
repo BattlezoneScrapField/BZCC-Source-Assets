@@ -1,0 +1,6 @@
+[GameObjectClass]
+geometryName = "npscr200.xsi"
+classLabel = "npscr1"
+
+[ScrapClass]
+lifeVariance = 10.0

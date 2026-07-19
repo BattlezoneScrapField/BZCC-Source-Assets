@@ -1,0 +1,8 @@
+[GameObjectClass]
+baseName = "npscr1"
+geometryName = "npscr300.xsi"
+classLabel = "npscr1"
+MaxChromeDistance = 50.0
+
+[ScrapClass]
+lifeVariance = 10.0

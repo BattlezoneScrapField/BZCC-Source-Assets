@@ -1,0 +1,20 @@
+[GameObjectClass]
+baseName = "ioflag01"
+classLabel = "flag"
+geometryName = "ioflag01.fbx"
+geometryScale = 1.0
+animCount = 1
+animName1 = "wave"
+animFile1 = "ioflag01.fbx"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Flag"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 1.0
+permanent = 1
+
+[BuildingClass]
