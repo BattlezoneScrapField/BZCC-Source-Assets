@@ -1,0 +1,796 @@
+[MissionInfo]
+countISDF = 17
+countScion = 21
+
+[ISDF 1]
+missionTitle = "This is Not a Drill"
+missionInfo = "isdf01.des"
+missionFile = "isdf01.bzn"
+planetName = "Pluto"
+planetInfo = "pluto.des"
+planetGeom = "pluto.fbx"
+preBriefMovie = "Flyby_1.ogv"
+
+techCount = 2
+techName1 = "ISDF Scout"
+techInfo1 = "ivscout.inf"
+techGeom1 = "ivscout00.fbx"
+techName2 = "ISDF Service Truck"
+techInfo2 = "ivserv.inf"
+techGeom2 = "ivserv00.fbx"
+
+mailCount = 2
+mailName1 = "General Braddock"
+mailInfo1 = "isdf01_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes0101.wav"
+mailName2 = "Commander Shabayev"
+mailInfo2 = "isdf01_m2.des"
+mailGeom2 = ""
+mailWave2 = "mes0102.wav"
+
+briefInfo = "isdf01.brf"
+
+launchMessage = "load01.wav"
+launchBackground = "pluto_load.tga"
+
+[ISDF 2]
+missionTitle = "A Simple S & R"
+missionInfo = "isdf02.des"
+missionFile = "isdf02.bzn"
+planetName = "Pluto"
+planetInfo = "pluto.des"
+planetGeom = "pluto.fbx"
+
+techCount = 2
+techName1 = "ISDF Constructor"
+techInfo1 = "ivcons.inf"
+techGeom1 = "ivcons_skel.fbx"
+techName2 = "Scion Scout"
+techInfo2 = "fvscout.inf"
+techGeom2 = "fvscout_skel.fbx"
+
+mailCount = 2
+mailName1 = "Commander Shabayev"
+mailInfo1 = "isdf02_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes0201.wav"
+mailName2 = "General Braddock"
+mailInfo2 = "isdf02_m2.des"
+mailGeom2 = ""
+mailWave2 = "mes0202.wav"
+briefInfo = "isdf02.brf"
+
+launchMessage = "load02.wav"
+launchBackground = "pluto_load.tga"
+
+[ISDF 3]
+missionTitle = "We Have Hostiles"
+missionInfo = "isdf03.des"
+missionFile = "isdf03.bzn"
+planetName = "Pluto"
+planetInfo = "pluto.des"
+planetGeom = "pluto.fbx"
+
+techCount = 3
+techName1 = "ISDF Tank"
+techInfo1 = "ivtank.inf"
+techGeom1 = "ivtank00.fbx"
+techName2 = "ISDF Armory"
+techInfo2 = "ibarmo.inf"
+techGeom2 = "ibarmo00.fbx"
+techView2 = 3
+techName3 = "Scion Sentry"
+techInfo3 = "fvsent.inf"
+techGeom3 = "fvsent_skel.fbx"
+
+mailCount = 1
+mailName1 = "Intercepted Transmission"
+mailInfo1 = "isdf03_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes0301.wav"
+
+briefInfo = "isdf03.brf"
+
+launchMessage = "load03.wav"
+launchBackground = "pluto_load.tga"
+
+[ISDF 4]
+missionTitle = "Too Hot"
+missionInfo = "isdf04.des"
+missionFile = "isdf04.bzn"
+planetName = "Pluto"
+planetInfo = "pluto.des"
+planetGeom = "pluto.fbx"
+
+techCount = 2
+techName1 = "ISDF Scavenger"
+techInfo1 = "ivscav.inf"
+techGeom1 = "ivscav00.fbx"
+techName2 = "ISDF Turret"
+techInfo2 = "ivturr.inf"
+techGeom2 = "ivturr00.fbx"
+
+mailCount = 2
+mailName1 = "General Braddock"
+mailInfo1 = "isdf04_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes0401.wav"
+
+mailName2 = "Intercepted Transmission"  
+mailInfo2 = "isdf04_m2.des"
+mailGeom2 = ""
+mailWave2 = "mes0402.wav"
+
+mailName3 = "General Braddock"  
+mailInfo3 = "isdf04_m3.des"
+mailGeom3 = ""
+mailWave3 = "mes0403.wav"
+
+mailName4 = "General Braddock"  
+mailInfo4 = "isdf04_m4.des"
+mailGeom4 = ""
+mailWave4 = "mes0404.wav"
+
+
+
+briefInfo = "isdf04.brf"
+
+launchMessage = "load04.wav"
+launchBackground = "pluto_load.tga"
+
+[ISDF 5]
+missionTitle = "The Dark Planet"
+missionInfo = "isdf05.des"
+missionFile = "isdf05.bzn"
+planetName = "Dark Planet"
+planetInfo = "dark.des"
+planetGeom = "dark.fbx"
+
+techCount = 1
+techName1 = "ISDF Mortar Bike"
+techInfo1 = "ivmbike.inf"
+techGeom1 = "ivmbik00.fbx"
+
+mailCount = 3
+mailName1 = "Commander Shabayev"
+mailInfo1 = "isdf05_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes0501.wav"
+
+mailName2 = "General Braddock"
+mailInfo2 = "isdf05_m2.des"
+mailGeom2 = ""
+mailWave2 = "mes0502.wav"
+
+mailName3 = "General Braddock"
+mailInfo3 = "isdf05_m3.des"
+mailGeom3 = ""
+mailWave3 = "mes0503.wav"
+
+briefInfo = "isdf05.brf"
+
+launchMessage = "load05.wav"
+launchBackground = "dark_load.tga"
+
+[ISDF 6]
+missionTitle = "The Wormhole"
+missionInfo = "isdf06.des"
+missionFile = "isdf06.bzn"
+planetName = "Dark Planet"
+planetInfo = "dark.des"
+planetGeom = "dark.fbx"
+
+techCount = 2
+techName1 = "ISDF Missile Scout"
+techInfo1 = "ivmisl.inf"
+techGeom1 = "ivmisl00.fbx"
+techName2 = "ISDF Bomber"
+techInfo2 = "ivbomb.inf"
+techGeom2 = "ivbomb00.fbx"
+
+mailCount = 3
+
+
+mailName1 = "Major Manson"
+mailInfo1 = "isdf06_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes0601.wav"
+
+mailName2 = "Major Manson"
+mailInfo2 = "isdf06_m2.des"
+mailGeom2 = ""
+mailWave2 = "mes0602.wav"
+
+mailName3 = "Major Manson"
+mailInfo3 = "isdf06_m3.des"
+mailGeom3 = ""
+mailWave3 = "mes0603.wav"
+
+briefInfo = "isdf06.brf"
+
+launchMessage = "load06.wav"
+launchBackground = "dark_load.tga"
+
+successMovie = "wormhole.ogv"
+
+[ISDF 7]
+missionTitle = "Through the Looking Glass"
+missionInfo = "isdf07.des"
+missionFile = "isdf07.bzn"
+planetName = "Mire"
+planetInfo = "mire.des"
+planetGeom = "mire.fbx"
+
+techCount = 2
+techName1 = "Scion Lancer"
+techInfo1 = "fvarch.inf"
+techGeom1 = "fvlancer_skel.fbx"
+techName2 = "Scion Artillery"
+techInfo2 = "fvartl.inf"
+techGeom2 = "fvartl_skel.fbx"
+
+mailCount = 4
+mailName1 = "Major Manson"
+mailInfo1 = "isdf07_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes0701.wav"
+
+mailName2 = "General Braddock"
+mailInfo2 = "isdf07_m2.des"
+mailGeom2 = ""
+mailWave2 = "mes0702.wav"
+
+mailName3 = "Commander Shabayev"
+mailInfo3 = "isdf07_m3.des"
+mailGeom3 = ""
+mailWave3 = "mes0703.wav"
+
+mailName4 = "Scion Transmission"
+mailInfo4 = "isdf07_m4.des"
+mailGeom4 = ""
+mailWave4 = "mes0704.wav"
+
+briefInfo = "isdf07.brf"
+
+launchMessage = "load07.wav"
+launchBackground = "mire_load.tga"
+
+[ISDF 8]
+missionTitle = "Get Help"
+missionInfo = "isdf08.des"
+missionFile = "isdf08.bzn"
+planetName = "Mire"
+planetInfo = "mire.des"
+planetGeom = "mire.fbx"
+
+techCount = 1
+techName1 = "Jak-Killer"
+techInfo1 = "mcjak01.inf"
+techGeom1 = "jak_skel.fbx"
+
+mailCount = 1
+mailName1 = "Commander Shabayev"
+mailInfo1 = "isdf08_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes0801.wav"
+
+briefInfo = "isdf08.brf"
+
+launchMessage = "load08.wav"
+launchBackground = "mire_load.tga"
+
+[ISDF 9]
+missionTitle = "Rumble in the Jungle"
+missionInfo = "isdf09.des"
+missionFile = "isdf09.bzn"
+planetName = "Mire"
+planetInfo = "mire.des"
+planetGeom = "mire.fbx"
+
+techCount = 1
+techName1 = "ISDF APC"
+techInfo1 = "ivapc.inf"
+techGeom1 = "ivapc00.fbx"
+
+mailCount = 1
+mailName1 = "General Braddock"
+mailInfo1 = "isdf09_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes0901.wav"
+
+briefInfo = "isdf09.brf"
+
+launchMessage = "load09.wav"
+launchBackground = "mire_load.tga"
+
+[ISDF 10]
+// isdf 11 is the 10th mission
+missionTitle = "Snow Blind"
+missionInfo = "isdf10.des"
+missionFile = "isdf11.bzn"
+planetName = "Bane"
+planetInfo = "Bane.des"
+planetGeom = "bane.fbx"
+
+techCount = 2
+techName1 = "ISDF Rocket Tank"
+techInfo1 = "ivrckt.inf"
+techGeom1 = "ivrckt00.fbx"
+techName2 = "Ice Rhino"
+techInfo2 = "bcrhino.inf"
+techGeom2 = "rhino_skel.fbx"
+
+
+mailCount = 3
+mailName1 = "General Braddock"
+mailInfo1 = "isdf11_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes1101.wav"
+
+mailName2 = "Major Manson"
+mailInfo2 = "isdf11_m2.des"
+mailGeom2 = ""
+mailWave2 = "mes1103.wav"
+
+mailName3 = "General Braddock"
+mailInfo3 = "isdf11_m3.des"
+mailGeom3 = ""
+mailWave3 = "mes1104.wav"
+
+
+briefInfo = "isdf10.brf"
+
+launchMessage = "load11.wav"
+launchBackground = "bane_load.tga"
+
+[ISDF 11]
+// this is isdf10.bzn, 
+missionTitle = "On Thin Ice"
+missionInfo = "isdf11.des"
+missionFile = "isdf10.bzn"
+planetName = "Bane"
+planetInfo = "bane.des"
+planetGeom = "bane.fbx"
+
+techCount = 2
+techName1 = "ISDF Recycler"
+techInfo1 = "ivrecy.inf"
+techGeom1 = "ivrecy00.fbx"
+techName2 = "ISDF Assault Tank"
+techInfo2 = "ivatank.inf"
+techGeom2 = "ivatnk00.fbx"
+
+mailCount = 3
+mailName1 = "Commander Shabayev"
+mailInfo1 = "isdf10_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes1001.wav"
+
+mailName2 = "General Braddock"
+mailInfo2 = "isdf10_m2.des"
+mailGeom2 = ""
+mailWave2 = "mes1002.wav"
+
+mailName3 = "Intercepted Transmission"
+mailInfo3 = "isdf10_m3.des"
+mailGeom3 = ""
+mailWave3 = "mes1003.wav"
+
+briefInfo = "isdf11.brf"
+
+launchMessage = "load10.wav"
+launchBackground = "bane_load.tga"
+
+[ISDF 12]
+missionTitle = "Counterattack"
+missionInfo = "isdf12.des"
+missionFile = "isdf12.bzn"
+planetName = "Bane"
+planetInfo = "Bane.des"
+planetGeom = "bane.fbx"
+
+techCount = 1
+techName1 = "Training Facility"
+techInfo1 = "ibtrain.inf"
+techGeom1 = "ibtrain00.fbx"
+techView1 = 1
+
+mailCount = 2
+mailName1 = "Major Manson"
+mailInfo1 = "isdf12_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes1201.wav"
+
+mailName2 = "General Braddock"
+mailInfo2 = "isdf12_m2.des"
+mailGeom2 = ""
+mailWave2 = "mes1202.wav"
+
+briefInfo = "isdf12.brf"
+
+launchMessage = "load12.wav"
+launchBackground = "bane_load.tga"
+
+
+[ISDF 13]
+missionTitle = "Payback"
+missionInfo = "isdf13.des"
+missionFile = "isdf13.bzn"
+planetName = "Rend"
+planetInfo = "rend.des"
+planetGeom = "rend.fbx"
+
+techCount = 1
+techName1 = "ISDF Factory"
+techInfo1 = "ibfact.inf"
+techGeom1 = "ibfact00.fbx"
+techView1 = 1
+
+mailCount = 3
+mailName1 = "Ambassador Kossieh"
+mailInfo1 = "isdf13_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes1301.wav"
+
+mailName2 = "General Braddock"
+mailInfo2 = "isdf13_m2.des"
+mailGeom2 = ""
+mailWave2 = "mes1302.wav"
+
+mailName3 = "General Braddock"
+mailInfo3 = "isdf13_m3.des"
+mailGeom3 = ""
+mailWave3 = "mes1303.wav"
+
+briefInfo = "isdf13.brf"
+
+launchMessage = "load13.wav"
+launchBackground = "rend_load.tga"
+
+[ISDF 14]
+missionTitle = "Fanning the Fire"
+missionInfo = "isdf14.des"
+missionFile = "isdf14.bzn"
+planetName = "Rend"
+planetInfo = "rend.des"
+planetGeom = "rend.fbx"
+
+techCount = 2
+techName1 = "ISDF Tech Center"
+techInfo1 = "ibtcen.inf"
+techGeom1 = "ibtcen00.fbx"
+techView1 = 1
+techName2 = "ISDF Relay Bunker"
+techInfo2 = "ibcbun.inf"
+techGeom2 = "ibcbun00.fbx"
+techView2 = 2
+mailCount = 1
+mailName1 = "General Braddock"
+mailInfo1 = "isdf14_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes1401.wav"
+
+briefInfo = "isdf14.brf"
+
+launchMessage = "load14.wav"
+launchBackground = "rend_load.tga"
+
+[ISDF 15]
+missionTitle = "A Traitor's Fate"
+missionInfo = "isdf15.des"
+missionFile = "isdf20.bzn"
+planetName = "Rend"
+planetInfo = "rend.des"
+planetGeom = "rend.fbx"
+
+techCount = 1
+techName1 = "ISDF Walker"
+techInfo1 = "ivwalk.inf"
+techGeom1 = "ivwalk_skel.fbx"
+
+mailCount = 2
+mailName1 = "General Braddock"
+mailInfo1 = "isdf20_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes2001.wav"
+
+mailName2 = "Major Manson"
+mailInfo2 = "isdf20_m2.des"
+mailGeom2 = ""
+mailWave2 = "mes2002.wav"
+
+briefInfo = "isdf15.brf"
+
+launchMessage = "load20.wav"
+launchBackground = "rend_load.tga"
+
+[ISDF 16]
+missionTitle = "Hole in One"
+missionInfo = "isdf16.des"
+missionFile = "isdf16.bzn"
+
+planetName = "Core"
+planetInfo = "core.des"
+planetGeom = "core.fbx"
+
+techCount = 1
+techName1 = "Gun Spire"
+techInfo1 = "fbspir.inf"
+techGeom1 = "fbspir00.fbx"
+techView1 = 1
+
+mailCount = 3
+mailName1 = "Intercepted Transmission"
+mailInfo1 = "isdf16_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes1601.wav"
+
+mailName2 = "General Braddock"
+mailInfo2 = "isdf16_m2.des"
+mailGeom2 = ""
+mailWave2 = "mes1602.wav"
+
+mailName3 = "Braddock to Cooke"
+mailInfo3 = "isdf16_m3.des"
+mailGeom3 = ""
+mailWave3 = "mes1603.wav"
+
+briefInfo = "isdf16.brf"
+
+launchMessage = "load16.wav"
+launchBackground = "core_load.tga"
+
+[ISDF 17]
+missionTitle = "Core"
+missionInfo = "isdf17.des"
+missionFile = "isdf17.bzn"
+planetName = "Core"
+planetInfo = "core.des"
+planetGeom = "core.fbx"
+
+techCount = 1
+techName1 = "Core Robot"
+techInfo1 = "fc111100.inf"
+techGeom1 = "cc111100.fbx"
+
+mailCount = 2
+mailName1 = "General Braddock"
+mailInfo1 = "isdf17_m1.des"
+mailGeom1 = ""
+mailWave1 = "mes1701.wav"
+
+mailName2 = "Intercepted Transmission"
+mailInfo2 = "isdf17_m2.des"
+mailGeom2 = ""
+mailWave2 = "mes1702.wav"
+
+briefInfo = "isdf17.brf"
+
+successMovie = "isdf_dn.ogv"
+
+launchMessage = "load17.wav"
+launchBackground = "core_load.tga"
+
+[ISDF 18]
+missionTitle = "Congratulations"
+missionInfo = "isdf18.des"
+planetName = "Core"
+planetInfo = "core.des"
+planetGeom = "core.fbx"
+
+techCount = 0
+
+mailCount = 0
+
+briefInfo = "credits.brf"
+
+
+[SCION 15]
+missionTitle = "Transformation"
+missionInfo = "scion01.des"
+missionFile = "scion01.bzn"
+planetName = "Mire"
+planetInfo = "mire.des"
+planetGeom = "mire.fbx"
+
+techCount = 1
+techName1 = "Scion Matriarch"
+techInfo1 = "fvrecy.inf"
+techGeom1 = "fvrecy00.fbx"
+
+mailCount = 1
+mailName1 = "Yelena Shabayev"
+mailInfo1 = "scion01_m1.des"
+mailGeom1 = ""
+mailWave1 = "messc0101.wav"
+
+briefInfo = "scion01.brf"
+
+launchMessage = "loadsc01.wav"
+launchBackground = "mire_load.tga"
+
+[SCION 16]
+missionTitle = "Ambush"
+missionInfo = "scion02.des"
+missionFile = "scion02.bzn"
+planetName = "Mire"
+planetInfo = "mire.des"
+planetGeom = "mire.fbx"
+
+techCount = 1
+techName1 = "Scion Kiln"
+techInfo1 = "fbkiln.inf"
+techGeom1 = "fbkiln00.fbx"
+techView1 = 1
+
+mailCount = 1
+mailName1 = "Padisha Burns"
+mailInfo1 = "scion02_m1.des"
+mailGeom1 = ""
+mailWave1 = "messc0201.wav"
+
+briefInfo = "scion02.brf"
+
+launchMessage = "loadsc02.wav"
+launchBackground = "mire_load.tga"
+
+[SCION 17]
+missionTitle = "Crystals"
+missionInfo = "scion03.des"
+missionFile = "scion03.bzn"
+planetName = "Mire"
+planetInfo = "mire.des"
+planetGeom = "mire.fbx"
+
+techCount = 1
+techName1 = "Scion Stronghold"
+techInfo1 = "fbstro.inf"
+techGeom1 = "fbstro00.fbx"
+techView1 = 1
+
+mailCount = 1
+mailName1 = "Padisha Burns"
+mailInfo1 = "scion03_m1.des"
+mailGeom1 = ""
+mailWave1 = "mssgsc0301.wav"
+
+briefInfo = "scion03.brf"
+
+
+launchMessage = "loadsc03.wav"
+launchBackground = "mire_load.tga"
+
+[SCION 18]
+missionTitle = "Escort"
+missionInfo = "scion04.des"
+missionFile = "scion04.bzn"
+planetName = "Rend"
+planetInfo = "rend.des"
+planetGeom = "rend.fbx"
+
+techCount = 1
+techName1 = "Scion Forge"
+techInfo1 = "fbforg.inf"
+techGeom1 = "fbforg00.fbx"
+techView1 = 1
+
+mailCount = 1
+mailName1 = "Padisha Burns"
+mailInfo1 = "scion04_m1.des"
+mailGeom1 = ""
+mailWave1 = "messc0401.wav"
+
+briefInfo = "scion04.brf"
+
+launchMessage = "loadsc04.wav"
+launchBackground = "rend_load.tga"
+
+[SCION 19]
+missionTitle = "An Unlikely Rescue"
+missionInfo = "scion05.des"
+missionFile = "scion05.bzn"
+planetName = "Bane"
+planetInfo = "bane.des"
+planetGeom = "bane.fbx"
+
+techCount = 1
+techName1 = "Scion Service Truck"
+techInfo1 = "fvserv.inf"
+techGeom1 = "fvserv00.fbx"
+
+mailCount = 3
+mailName1 = "Padisha Burns"
+mailInfo1 = "scion05_m1.des"
+mailGeom1 = ""
+mailWave1 = "messc0501.wav"
+mailName2 = "Padisha Burns"
+mailInfo2 = "scion05_m2.des"
+mailGeom2 = ""
+mailWave2 = "messc0502.wav"
+mailName3 = "Yelena Shabayev"
+mailInfo3 = "scion05_m3.des"
+mailGeom3 = ""
+mailWave3 = "messc0503.wav"
+
+briefInfo = "scion05.brf"
+
+launchMessage = "loadsc05.wav"
+launchBackground = "bane_load.tga"
+
+[SCION 20]
+missionTitle = "The AAN"
+missionInfo = "scion06.des"
+missionFile = "scion06.bzn"
+planetName = "Bane"
+planetInfo = "bane.des"
+planetGeom = "bane.fbx"
+
+techCount = 1
+techName1 = "Scion Titan"
+techInfo1 = "fvatank.inf"
+techGeom1 = "fvtitan_skel.fbx"
+
+mailCount = 1
+mailName1 = "Padisha Burns to John Cooke"
+mailInfo1 = "scion06_m1.des"
+mailGeom1 = ""
+mailWave1 = "messc0601.wav"
+
+briefInfo = "scion06.brf"
+
+launchMessage = "loadsc06.wav"
+launchBackground = "bane_load.tga"
+
+
+[SCION 21]
+missionTitle = "Braddock"
+missionInfo = "scion07.des"
+missionFile = "scion07.bzn"
+planetName = "Rend"
+planetInfo = "rend.des"
+planetGeom = "rend.fbx"
+
+techCount = 1
+techName1 = "Scion Mauler"
+techInfo1 = "fvwalk.inf"
+techGeom1 = "fvwalk_skel.fbx"
+
+mailCount = 3
+mailName1 = "Yelena Shabayev"
+mailInfo1 = "scion07_m1.des"
+mailGeom1 = ""
+mailWave1 = "messc0701.wav"
+mailName2 = "General Braddock"
+mailInfo2 = "scion07_m2.des"
+mailGeom2 = ""
+mailWave2 = "messc0702.wav"
+mailName3 = "Padisha Burns"
+mailInfo3 = "scion07_m3.des"
+mailGeom3 = ""
+mailWave3 = "messc0703.wav"
+mailName4 = "Padisha Burns"
+mailInfo4 = "scion07_m4.des"
+mailGeom4 = ""
+mailWave4 = "messc0704.wav"
+
+briefInfo = "scion07.brf"
+
+launchMessage = "loadsc07.wav"
+launchBackground = "rend_load.tga"
+
+successMovie = "scion_dn.ogv"
+
+[SCION 22]
+missionTitle = "Congratulations"
+missionInfo = "scion08.des"
+planetName = "Rend"
+planetInfo = "rend.des"
+planetGeom = "rend.fbx"
+
+techCount = 0
+
+mailCount = 0
+
+briefInfo = "credits.brf"
+
