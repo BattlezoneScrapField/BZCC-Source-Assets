@@ -1,0 +1,77 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+xplGround = "xfsnipgnd"
+xplVehicle = "xfsnipcar"
+xplBuilding = "xfsnipcar"
+renderName = "fsnip_c.render"
+
+ammoCost = 2
+lifeSpan = 1.0 // 200m
+shotSpeed = 200.0
+
+damageValue(N) = 5
+damageValue(L) = 3
+damageValue(H) = 0
+
+damageValue(S) = 3
+damageValue(D) = 5
+damageValue(A) = 3
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "fsnip_c.core"
+renderName2 = "fsnip_c.tracer"
+renderName3 = "fsnip_c.trail"
+renderName4 = "fsnip_c.burst"
+
+
+[Core]
+renderBase = "draw_sprite"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "190 255 49 80"
+finishColor = "190 255 49 80"
+startRadius = 0.30
+finishRadius = 0.30
+
+[tracer]
+renderBase = "draw_tracer"
+textureBlend = "one one modulate"
+textureName = "ion.tga"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 0.22
+finishRadius = 0.22
+tracerLength = 2.5
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.5
+startColor = "190 255 49 60"
+finishColor = "160 255 49 0"
+startRadius = 0.075
+finishRadius = 0.0
+segmentTime = 0.1
+TextureSpeed = -16.0
+animateTime = 0.1
+
+[burst]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "190 255 49 120" // "255 63 55 255"
+finishColor = "190 255 49 0" // "255 63 55 255"
+startRadius = 0.15
+finishRadius = 0.01
+rotationRate = 12.0
+animateTime = 0.02
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 0.0"
+emitLife = 0.02
+

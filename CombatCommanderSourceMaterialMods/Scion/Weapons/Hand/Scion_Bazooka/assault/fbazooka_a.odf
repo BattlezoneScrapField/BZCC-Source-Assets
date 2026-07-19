@@ -1,0 +1,94 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+shotSound = "plasmaT2.wav"
+
+renderName = "fbazooka_a.render"
+
+xplGround = "xsbazgnd_a"
+xplVehicle = "xsbazcar_a"
+xplBuilding = "xsbazcar_a"
+
+ammoCost = 5
+lifeSpan = 1.34 // 201m
+
+shotSpeed = 150.0
+
+damageValue(N) = 50 // none
+damageValue(L) = 40 // light
+damageValue(H) = 30 // heavy
+
+damageValue(S) = 40 // standard
+damageValue(D) = 50 // deflection
+damageValue(A) = 30 // absorbtion
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "fbazooka_a.flare"
+renderName2 = "fbazooka_a.halo"
+renderName3 = "fbazooka_a.trail"
+renderName4 = "fbazooka_a.smoke"
+renderName5 = "fbazooka_a.embers"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 120"
+finishColor = "255 255 255 120"
+startRadius = 1.0
+finishRadius = 1.0
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 127"
+finishColor = "0 127 255 127"
+startRadius = 3.0
+finishRadius = 3.0
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "sonictrail.tga"
+textureBlend = "one one modulate"
+texturerate = 0.3
+texturespeed = -5.0
+startColor = "0 127 255 50"
+finishColor = "0 0 255 0"
+startRadius = 0.25 //0.75
+finishRadius = 1.0
+segmentTime = 0.3
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor =   "30 40 50 120" //"153 153 153 128"
+finishColor = "60 30 40 0"
+startRadius = 0.4
+finishRadius = 2.0
+rotationRate = 2.0
+animateTime = 1.0
+emitDelay = 0.04
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.6 0.6 0.6"
+emitLife = 1.0
+
+[embers]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "65 136 254 180"
+finishColor = "103 180 216 0"
+startRadius = 0.3
+finishRadius = 0.1
+rotationRate = 0.1
+emitLife = 0.1
+animateTime = 0.1
+emitDelay = 0.005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 0.0"
+emitInherit = "0.0 0.0 0"
+BottomInteractsWithTerrain = false

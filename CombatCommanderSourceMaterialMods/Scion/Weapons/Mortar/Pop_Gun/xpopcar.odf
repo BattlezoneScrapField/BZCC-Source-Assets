@@ -1,0 +1,117 @@
+// ===================
+// POPPER VEHICLE HIT
+// ===================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 9
+
+particleClass1 = "xpopgnd.Shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleInherit1 = "0.5 0.5 0.5"
+
+particleClass2 = "xpopgnd.SmokePlume"
+particleCount2 = 4 //10
+particleVeloc2 = "10.0 35.0 10.0"
+particleInherit2 = "0.5 0.5 0.5"
+
+particleClass3 = "xpopgnd.Light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleInherit3 = "0.8 0.8 0.8"
+
+particleClass4 = "xpopgnd.FlameHeat"
+particleCount4 = 6
+particleVeloc4 = "10.0 10.0 10.0"
+particleBias4 = "0.0 6.0 0.0"
+particleInherit4 = "0.5 0.5 0.5"
+
+particleClass5 = "xpopgnd.Flames"
+particleCount5 = 6 //8
+particleVeloc5 = "19.0 19.0 19.0"
+particleBias5 = "0.0 10.0 0.0"
+particleInherit5 = "0.5 0.5 0.5"
+
+particleClass6 = "xpopcar.HullAsh"
+particleCount6 = 5 //10
+particleVeloc6 = "110.0 90.0 110.0"
+particleBias6 = "0.0 12.0 0.0"
+particleInherit6 = "0.8 0.8 0.8"
+
+particleClass7 = "xpopcar.Secondary"
+particleCount7 = 2
+particleVeloc7 = "25.0 25.0 25.0" //"50.0 50.0 50.0"
+particleInherit7 = "0.5 0.5 0.5"
+
+particleClass8 = "xpopcar.lightflare"
+particleCount8 = 1
+particleVeloc8 = "0.0 0.0 0.0"
+particleInherit8 = "0.8 0.8 0.8"
+
+particleClass9 = "xpopgnd.burst"
+particleCount9 = 1
+particleVeloc9 = "0.0 0.0 0.0"
+particleInherit9 = "0.8 0.8 0.8"
+
+explSound = "xsv2.wav"
+
+damageRadius = 15.0
+
+damageValue(N) = 125 // none
+damageValue(L) = 80 // light
+damageValue(H) = 25 // heavy
+
+damageValue(S) = 80 // standard
+damageValue(D) = 125 // deflection
+damageValue(A) = 25 // absorbtion
+
+[Secondary]
+simulateBase = "sim_smoke"
+lifeTime = 0.45
+startDelay = 0.25
+renderBase = "draw_emit"
+emitDelay = 0.2
+emitName = "xpopcar.SecondaryRender"
+emitVariance = "3.0 3.0 3.0"
+emitVelocity = "0.0 0.0 0.0"
+emitInherit = "1.0 1.0 1.0"
+
+	[SecondaryRender]
+	simulateBase = "sim_smoke"
+	lifeTime = 1.9
+	renderBase = "draw_multi"
+	renderCount = 5
+	renderName1 = "xpopcar.LightFlare"
+	renderName2 = "xpopgnd.FlameHeat"
+	renderName3 = "xpopgnd.Flames"
+	renderName4 = "xpopgnd.Flames"
+	renderName5 = "xpopgnd.smokeplume"
+
+[LightFlare]
+simulateBase = "sim_smoke"
+lifeTime = 0.2
+renderBase = "draw_twirl"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "227 43 112 255" 
+finishColor = "227 33 49 0" 
+startRadius = 10.0
+finishRadius = 2.0
+animateTime = 0.2
+rotationRate = 5.0
+BottomInteractsWithTerrain = false
+
+[HullAsh]
+simulateBase = "sim_ember"
+lifeTime = 6.0
+renderBase = "draw_twirl"
+textureName = "spark.tga"
+textureBlend = "one one modulate"
+startColor = "227 43 112 255" 
+finishColor = "227 23 39 0" 
+startRadius = 0.2
+finishRadius = 0.2
+animateTime = 6.0
+BottomInteractsWithTerrain = false

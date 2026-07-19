@@ -1,0 +1,103 @@
+[GameObjectClass]
+classLabel = "scavenger"
+baseName = "fvscav"
+geometryName = "fvscav00.fbx"
+geometryScale = 1.0
+animCount = 0
+animName1 = "pickup"
+animFile1 = "fvscav00_pickup.fbx" //_pickup.xsi"
+animRate = 3.0
+
+cockpitName = "fvscav_cockpit.fbx"
+scrapValue = 10
+scrapCost = 20
+buildTime = 10.0
+maxHealth = 3000
+maxAmmo = 0
+unitName = "Harvester"
+aiName = "ScavProcess"
+aiName2 = "ScavProcess"
+heatSignature = 5.0
+imageSignature = 3.0
+radarSignature = 2.0
+isAssault = 1
+
+armorClass = H
+
+/////// PROVIDES ///////////////////
+
+provideCount = 2
+provideName1 = "fvscav"
+provideName2 = "VIRTUAL_CLASS_SCAVENGER"
+
+////////////////////////////////////
+
+effectHard1 = "tractor_l"
+effectName1 = "dusttrail3"
+effectMinVelocity1 = 5.0
+effectMaxVelocity1 = 500.0
+effectHard2 = "tractor_r"
+effectName2 = "dusttrail3"
+effectMinVelocity2 = 5.0
+effectMaxVelocity2 = 500.0
+
+[CraftClass]
+rangeScan = 200.0
+periodScan = 0.0
+velocJam = 0.0
+
+TeamTransferrable = true
+GotoTaskHasLeader = false
+
+braccelFactor = 0.1
+velFactor = 0.3
+strafeFactor = 0.1
+steerFactor = 1.0
+omegaFactor = 1.0
+
+selectGoMsg = "fvscav02.wav"
+selectOtherMsg = "fvscav01.wav"
+selectWaitMsg = "fvscav01.wav"
+
+selectFollowMsg = "fvscav03.wav"
+selectPickupMsg = "fvscav05.wav"
+selectDropoffMsg = "fvscav05.wav"
+
+holdMsg = "fvscav06.wav"
+goMsg = "fvscav04.wav"
+stopMsg = "fvscav04.wav"
+followMsg = "fvscav03.wav"
+followMeMsg = "fvscav07.wav"
+rescueMsg = "fvscav09.wav"
+repairMsg = "fvscav08.wav"
+recycleMsg = "fvscav10.wav"
+otherMsg = "fvscav04.wav"
+goObjectMsg = "fvscav13.wav"
+
+[TrackedVehicleClass]
+velocForward = 15.0
+velocReverse = 10.0
+accelThrust = 5.0
+omegaSpin = 1.0
+omegaTurn = 0.5
+alphaSteer = 2.0
+
+TREAD_STATIC_FRICTION = 1.5
+
+engineSound = "sscav01.wav"
+treadSound = "sscav01.wav"
+
+[TrackedDeployableClass]
+timeDeploy = 5.0
+timeUndeploy = 5.0
+soundDeploy = "srecy02.wav"
+soundUndeploy = "trundepl.wav"
+
+[ScavengerClass]
+animPickup = "pickup" // animation name to play on picking up a piece of scrap
+animPickupCycle = 1
+soundPickup = "suck.wav"
+scrapHold = 20
+DropDist = 20
+deployClass = "fbscav"
+deployOffset = 4.1

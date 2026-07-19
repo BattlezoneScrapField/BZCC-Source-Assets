@@ -1,0 +1,69 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotSound = "Ordin_a.wav"
+
+renderName = "hotblast.render"
+
+xplGround = "xmslgnd"
+xplVehicle = "xmslcar"
+xplBuilding = "xmslbld"
+
+ammoCost = 3
+lifeSpan = 1.5
+shotSpeed = 100.0
+
+damageValue(N) = 5
+damageValue(L) = 5
+damageValue(H) = 5
+
+damageValue(S) = 5
+damageValue(D) = 5
+damageValue(A) = 5
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "hotblast2.smoke"
+renderName2 = "hotblast2.flame"
+renderName3 = "hotblast2.Light"
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "127 64 127 64"
+finishColor = "255 10 20 0"
+startRadius = 0.1
+finishRadius = 4.0
+rotationRate = 2.0
+animateTime = 0.1
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 0.1
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 127 0 255"
+finishColor = "255 0 0 255"
+startRadius = 0.1
+finishRadius = 0.0
+animateTime = 0.05
+rotationRate = 10.0
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 0.05
+
+[Light]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "127 64 127 64"
+finishColor = "255 0 0 255"
+startRadius = 1.0
+finishRadius = 1.0

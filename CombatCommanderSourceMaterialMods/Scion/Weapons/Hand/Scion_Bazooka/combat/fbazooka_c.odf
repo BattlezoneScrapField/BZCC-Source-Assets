@@ -1,0 +1,90 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+shotSound = "plasmaT1.wav"
+renderName = "fbazooka_c.render"
+
+xplGround = "xsbazgnd_c"
+xplVehicle = "xsbazcar_c"
+xplBuilding = "xsbazcar_c"
+
+ammoCost = 1.2
+lifeSpan = 1.0
+shotSpeed = 150.0
+
+damageValue(N) = 25 // none
+damageValue(L) = 15 // light
+damageValue(H) = 5 // heavy
+
+damageValue(S) = 15 // standard
+damageValue(D) = 25 // deflection
+damageValue(A) = 5 // absorbtion
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "fbazooka_c.flare"
+renderName2 = "fbazooka_c.halo"
+renderName3 = "fbazooka_c.trail"
+renderName4 = "fbazooka_c.smoke"
+renderName5 = "fbazooka_c.embers"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 83"
+finishColor = "255 255 255 83"
+startRadius = 0.75
+finishRadius = 0.75
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 127"
+finishColor = "0 127 255 127"
+startRadius = 2.0
+finishRadius = 2.0
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 50"
+finishColor = "0 0 255 0"
+startRadius = 0.25 //0.75
+finishRadius = 0.0
+segmentTime = 0.3
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "50 40 50 80" //"153 153 153 128"
+finishColor = "60 30 40 0"
+startRadius = 0.2
+finishRadius = 1.0
+rotationRate = 2.0
+animateTime = 1.0
+emitDelay = 0.05
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.6 0.6 0.6"
+emitLife = 1.0
+
+[embers]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "65 136 254 180"
+finishColor = "103 180 216 0"
+startRadius = 0.3
+finishRadius = 0.1
+rotationRate = 0.1
+emitLife = 0.1
+animateTime = 0.1
+emitDelay = 0.005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "4.0 4.0 0.0"
+emitInherit = "0.3 0.3 1.0"
+BottomInteractsWithTerrain = false

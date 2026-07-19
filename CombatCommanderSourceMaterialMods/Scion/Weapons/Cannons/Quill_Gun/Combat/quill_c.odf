@@ -1,0 +1,78 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+shotSound = "gquil01.wav"
+
+xplGround = "xquillgnd"
+xplVehicle = "xquillcar"
+xplBuilding = "xquillcar"
+
+renderName = "quill_c.render"
+
+ammoCost = 7
+lifeSpan = 0.48 // 120m
+shotSpeed = 250.0
+
+damageValue(N) = 60 // none // 300
+damageValue(L) = 52 // light // 260
+damageValue(H) = 40 // heavy // 200
+
+damageValue(S) = 52 // standard // 260
+damageValue(D) = 30 // deflection // 150
+damageValue(A) = 60 // absorbtion // 300
+
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "quill_c.trail"
+renderName2 = "quill_c.sparkle"
+renderName3 = "quill_c.light"
+renderName4 = "quill_c.smoke"
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "165 60 60 0" //"65 0 0 0"
+textureRate = 0.5
+startRadius = 0.1
+finishRadius = 0.0
+segmentTime = 0.4
+ 
+[Sparkle]
+renderBase = "draw_twirl_trail"
+textureName = "spark.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 200 255"
+finishColor = "255 0 0 0"
+startRadius = 0.03
+finishRadius = 0.07
+animateTime = 1.0
+emitDelay = 0.01
+emitVariance = "0.5 0.5 0.5"
+emitLife = 1.5
+
+[Light]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 0 0 255"
+startRadius = 1.2
+finishRadius = 1.2
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor =  "50 40 50 80" //"153 153 153 128"
+finishColor = "60 30 40 0"
+startRadius = 0.2
+finishRadius = 1.0
+animateTime = 1.0
+emitDelay = 0.05 //0.02
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.6 0.6 0.6"
+emitLife = 1.0

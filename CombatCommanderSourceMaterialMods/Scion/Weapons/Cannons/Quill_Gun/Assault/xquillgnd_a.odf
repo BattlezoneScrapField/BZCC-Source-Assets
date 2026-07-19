@@ -1,0 +1,106 @@
+// =================
+// FANG CANNON GROUND HIT
+// =================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "wmgr2.wav"
+damageRadius = 0.0
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+particleTypes = 5
+
+particleClass1 = "xquillgnd_a.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xquillgnd_a.char"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xquillgnd_a.char2"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xquillgnd_a.chunks"
+particleCount4 = 2 //8
+particleVeloc4 = "17.5 35.0 17.5"
+particleBias4 = "0.0 14.0 0.0"
+
+particleClass5 = "xquillgnd_a.SparkSprite"
+particleCount5 = 2 //3
+particleVeloc5 = "0.3 0.3 0.3"
+particleBias5 = "0.0 0.1 0.0"
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 1.0
+textureName = "ground.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "110 110 110 110"
+finishColor = "165 30 30 0"
+startRadius = 0.3
+finishRadius = 7.3
+animateTime = 0.5
+useTerrainColor = 0.9
+
+[char]
+simulateBase = "sim_null"
+lifeTime = 2.0
+renderBase = "draw_planar"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = " 255 50 50 255"
+finishColor = "255 0 0 0"
+startRadius = 4.0
+finishRadius = 0.05
+animateTime = 2.0
+
+[char2]
+simulateBase = "sim_null"
+lifeTime = 4.0
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 10 10 10 255"
+finishColor = "10 10 10 0"
+startRadius = 2.0
+finishRadius = 2.0
+animateTime = 4.0
+
+[Chunks]
+simulateBase = "sim_chunk"
+lifeTime = 3.0
+renderBase = "draw_twirl"
+textureName = "dirt.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "20 20 20 255"
+finishColor = "20 20 20 0"
+startRadius = 0.6
+finishRadius = 0.6
+animateTime = 3.0
+useTerrainColor = 0.9
+BottomInteractsWithTerrain = false
+
+[SparkSprite]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_twirl"
+textureName = "crackle.tga"
+textureBlend = "one one modulate"
+startColor = "255 60 60 255"
+finishColor = "255 40 40 0"
+startRadius = 0.8
+finishRadius = 2.8
+animateTime = 0.15
+rotationRate = 12.0
+BottomInteractsWithTerrain = false

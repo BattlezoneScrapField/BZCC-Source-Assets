@@ -1,0 +1,52 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 1.0
+xplGround = "xsplashit_a"
+xplVehicle = "xsplashit_a"
+xplBuilding = "xsplashit_a"
+
+renderName = "plasstream.render"
+
+ammoCost = 5.625
+lifeSpan = 0.8 // 40m
+shotSpeed = 50.0
+
+damageValue(N) = 30 // none // 300
+damageValue(L) = 20 // light // 200
+damageValue(H) = 15 // heavy // 100
+
+damageValue(S) = 20 // standard // 300
+damageValue(D) = 30 // deflection // 500
+damageValue(A) = 15 // assault // 100
+
+[Render]
+renderBase = "draw_multi"
+
+renderCount = 2
+renderName1 = "plasstream.core"
+renderName2 = "plasstream.puff"
+//renderName3 = "plasball.light"
+
+[Core]
+renderBase = "draw_twirl"
+textureName = "flame.tga" //flame2
+textureBlend = "srcalpha one modulate"
+startColor = "255 155 155 255"
+finishColor = "255 200 0 0"
+startRadius = 0.5
+finishRadius = 2.0
+animateTime = 0.8
+rotationrate = -10.0
+
+[Puff]
+renderBase = "draw_twirl"
+textureName = "plasmahitcore.tga" //flame2
+textureBlend = "srcalpha one modulate"
+startColor = "255 220 255 200"
+finishColor = "255 220 255 0"
+startRadius = 0.2
+finishRadius = 5.0
+animateTime = 0.8
+rotationrate = 10.0

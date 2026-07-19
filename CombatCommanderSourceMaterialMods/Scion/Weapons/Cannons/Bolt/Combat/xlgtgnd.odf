@@ -1,0 +1,37 @@
+// ====================
+// LIGHTNING GROUND HIT
+// ====================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 2
+
+particleClass1 = "xlgtgnd.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xarcgnd_a.cloud"
+particleCount2 = 1
+particleVeloc2 = "0.0 10.0 0.0"
+
+explSound = "lhit.wav"
+damageRadius = 0.0
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_planar"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "100 255 240 255"
+finishColor = "0 255 220 0"
+startRadius = 0.3
+finishRadius = 3.0
+animateTime = 0.5

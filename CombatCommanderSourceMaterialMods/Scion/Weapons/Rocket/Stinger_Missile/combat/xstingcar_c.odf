@@ -1,0 +1,70 @@
+// ===================
+// STINGER MISSILE VEHICLE HIT
+// ===================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xsv2.wav"
+
+damageRadius = 5.0
+
+damageValue(N) = 50 // none
+damageValue(L) = 20 // light
+damageValue(H) = 5 // heavy
+
+damageValue(S) = 20 // standard
+damageValue(D) = 50 // deflection
+damageValue(A) = 5 // absorbtion
+
+particleTypes = 9
+
+
+particleClass1 = "xstinggnd_c.ShockSphere"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleInherit1 = "0.5 0.5 0.5"
+
+particleClass2 = "xstinggnd_c.LightFlash"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+particleInherit2 = "0.5 0.5 0.5"
+
+particleClass3 = "xstinggnd_c.LightFlare"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleInherit3 = "0.5 0.5 0.5"
+
+particleClass4 = "xstinggnd_c.Ash"
+particleCount4 = 3
+particleVeloc4 = "30.0 30.0 30.0"
+particleInherit4 = "0.5 0.5 0.5"
+
+particleClass5 = "xstinggnd_c.Trails"
+particleCount5 = 3
+particleVeloc5 = "30.0 30.0 30.0"
+particleInherit5 = "0.5 0.5 0.5"
+
+particleClass6 = "xstinggnd_c.FlameHeat"
+particleCount6 = 4
+particleVeloc6 = "5.0 5.0 5.0"
+particlePosVar6 = "3.0 3.0 3.0"
+particleInherit6 = "0.5 0.5 0.5"
+
+particleClass7 = "xstinggnd_c.Flames"
+particleCount7 = 5 //11
+particleVeloc7 = "8.7 8.7.0 8.7"
+particlePosVar7 = "3.0 3.0 3.0"
+particleInherit7 = "0.5 0.5 0.5"
+
+particleClass8 = "xstinggnd_c.ExplodeSprites"
+particleCount8 = 4
+particleVeloc8 = "2.7 2.7 2.7"
+particlePosVar8 = "2.0 2.0 2.0"
+particleInherit8 = "0.5 0.5 0.5"
+
+particleClass9 = "xstinggnd_c.SmokePuffCloud"
+particleCount9 = 4
+particleVeloc9 = "20.0 20.0 20.0"
+particlePosVar9 = "3.0 3.0 3.0"
+particleInherit9 = "0.5 0.5 0.5"

@@ -1,0 +1,77 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+xplGround = "xiongnd"
+xplVehicle = "xioncar"
+xplBuilding = "xioncar"
+
+ammoCost = 1.5
+lifeSpan = 0.5 // 100m
+shotSpeed = 200.0
+
+damageValue(N) = 20 // none
+damageValue(L) = 10 // light
+damageValue(H) = 1 // heavy
+
+damageValue(S) = 10 // standard
+damageValue(D) = 20 // deflection
+damageValue(A) = 1 // absorbtion
+
+renderName = "ionize_c.render"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "ionize_c.core"
+renderName2 = "ionize_c.tracer"
+renderName3 = "ionize_c.trail"
+renderName4 = "ionize_c.burst"
+
+
+[Core]
+renderBase = "draw_sprite"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "190 255 49 80"
+finishColor = "190 255 49 80"
+startRadius = 0.75
+finishRadius = 0.75
+
+[tracer]
+renderBase = "draw_tracer"
+textureBlend = "one one modulate"
+textureName = "ion.tga"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 0.45
+finishRadius = 0.45
+tracerLength = 2.5
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.5
+startColor = "190 255 49 60"
+finishColor = "160 255 49 0"
+startRadius = 0.15
+finishRadius = 0.0
+segmentTime = 0.1
+TextureSpeed = -8.0
+animateTime = 0.1
+
+[burst]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "190 255 49 120" // "255 63 55 255"
+finishColor = "190 255 49 0" // "255 63 55 255"
+startRadius = 0.3
+finishRadius = 0.02
+rotationRate = 12.0
+animateTime = 0.02
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 0.0"
+emitLife = 0.02

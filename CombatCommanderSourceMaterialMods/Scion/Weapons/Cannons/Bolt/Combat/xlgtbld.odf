@@ -1,0 +1,39 @@
+// ======================
+// LIGHTNING BUILDING HIT
+// ======================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 4
+
+particleClass1 = "xlgtcar.light"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xlgtcar.core"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xlgtcar.sparktrails"
+particleCount3 = 4 //6
+particleVeloc3 = "34.0 38.0 34.0"
+particleBias3 = "0.0 9.0 0.0"
+particlePosVar3 = "2.0 2.0 2.0"
+
+particleClass4 = "xlgtcar.sparkcore"
+particleCount4 = 1 //2
+particleVeloc4 = "0.3 0.3 0.3"
+particleBias4 = "0.0 0.0 0.0"
+
+explSound = "lhit.wav"
+damageRadius = 0.0
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+
+

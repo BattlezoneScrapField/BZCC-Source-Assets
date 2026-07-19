@@ -1,0 +1,34 @@
+[GameObjectClass]
+geometryName = "sgwasp00.fbx"
+geometryScale = 2.0
+classLabel = "torpedo"
+baseName = "waspmsl"
+scrapValue = 0
+scrapCost = 0
+maxHealth = 400
+maxAmmo = 750 //250
+unitName = "WASP Rocket"
+aiName = "TorpedoProcess"
+aiName2 = "TorpedoProcess"
+
+//[CraftClass]
+//rangeScan = 300.0f
+//periodScan = 0.5f
+//velocJam = 0.5f
+
+[TorpedoClass]
+setAltitude = 1.0
+alphaTrack = 20.0
+alphaDamp = 5.0
+velocForward = 30.0
+accelThrust = 50.0
+omegaTurn = 2.0
+alphaSteer = 5.0
+lifeSpan = 10.0
+//xplBlast = "xminxpl"
+xplBlast = "xwaspxpl"
+
+LIFT_SPRING = 40.0
+LIFT_DAMP = 15.0
+
+soundThrust = "waspmsl.wav"

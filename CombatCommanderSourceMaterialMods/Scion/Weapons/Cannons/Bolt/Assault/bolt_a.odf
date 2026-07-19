@@ -1,0 +1,56 @@
+[OrdnanceClass]
+classLabel = "beam"
+
+shotGeometry = NULL
+xplGround = "xlgtgnd"
+xplVehicle = "xlgtcar"
+xplBuilding = "xlgtbld"
+
+renderName = "bolt_a.render"
+
+ammoCost = 100
+lifeSpan = 200e-6 // 200m
+shotSpeed = 1e6
+
+damageValue(N) = 1500 // none
+damageValue(L) = 1000 // light
+damageValue(H) = 500 // heavy
+
+damageValue(S) = 1000 // standard
+damageValue(D) = 1000 // deflection
+damageValue(A) = 500 // absorbtion
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "bolt_c.trail"
+renderName2 = "bolt_a.trail"
+renderName3 = "bolt_a.trail2"
+
+[trail]
+renderBase = "draw_bolt"
+textureName = "arctrail.tga"
+textureBlend = "one one modulate"
+startColor = "255 180 255 255"
+finishColor = "255 180 255 0"
+startRadius = 1.0
+finishRadius = 0.01
+segmentLength = 3.0 
+segmentVariance = "2.0 2.0 0.5"
+animateTime = 0.8 // 0.2
+textureRate = 0.3
+textureSpeed = -8.0
+
+[trail2]
+renderBase = "draw_bolt"
+textureName = "arctrail.tga"
+textureBlend = "one one modulate"
+startColor = "255 50 90 255"
+finishColor = "255 0 60 0"
+startRadius = 0.8
+finishRadius = 0.01
+segmentLength = 1.0 
+segmentVariance = "3.0 3.0 1"
+animateTime = 0.8 // 0.2
+textureRate = 0.3
+textureSpeed = -16.0

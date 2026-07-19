@@ -1,0 +1,53 @@
+[WeaponClass]
+classLabel = "machinegun"
+
+// external geometry
+geometryName = "fgsnip__stand.xsi"
+geometryScale = 0.12
+animCount = 4
+animName1 = "stand"
+animFile1 = "fgsnip__stand.xsi"
+animName2 = "walk"
+animFile2 = "fgsnip__stand.xsi"
+animName3 = "crouch"
+animFile3 = "fgsnip__stand.xsi"
+animName4 = "jump"
+animFile4 = "fgsnip__stand.xsi"
+
+// cockpit geometry
+cockpitName = "fwrifl_cockpit_stand.xsi"
+cockpitScale = 0.12
+animCountCockpit = 4
+animNameCockpit1 = "stand"
+animFileCockpit1 = "fwrifl_cockpit_stand.xsi"
+animNameCockpit2 = "walk"
+animFileCockpit2 = "fwrifl_cockpit_run.xsi"
+animNameCockpit3 = "crouch"
+animFileCockpit3 = "fwrifl_cockpit_snipe.xsi"
+animNameCockpit4 = "jump"
+animFileCockpit4 = "fwrifl_cockpit_stand.xsi"
+
+ordName = "fsnip_c"
+wpnName = "Pulse"
+fireSound = "gmini00.wav"
+wpnReticle = "grifle_s"
+wpnCategory = "HAND"
+isAssault = 0
+isFlying = 0
+altName = "fgsnip_a"
+flashName = "fgsnip_c.flash"
+
+[CannonClass]
+shotDelay = 0.1
+shotVariance = 0.02
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "ionflash.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 3.0
+finishRadius = 1.0
+animateTime = 0.1
+geomName = "g_sflash.xsi"

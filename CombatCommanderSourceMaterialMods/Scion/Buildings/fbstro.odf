@@ -1,0 +1,111 @@
+[GameObjectClass]
+baseName = "fbstro"
+geometryName = "fbstro00.fbx"
+classLabel = "armory"
+collisionRadius = 1.0
+scrapCost = 70
+scrapValue = 30
+maxHealth = 7000
+maxAmmo = 0
+powerCost = 0
+unitName = "Stronghold"
+aiName = "ArmoryProcess"
+aiName2 = "ArmoryProcess"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+isAssault = 1
+
+armorClass = H
+
+buildSupport = "A"
+buildRequire = "F"
+
+/////// REQUIREMENTS ///////////////
+
+requireCount = 1
+requireName1 = "fbforg"
+requireText1 = "Build Forge"
+//requireName2 = "fbdowe"
+//requireText2 = "Build Dower"
+
+////////////////////////////////////
+
+
+/////// PROVIDES ///////////////////
+
+provideCount = 4
+provideName1 = "fbstro"
+provideName2 = "VIRTUAL_CLASS_ARMORY"
+provideName3 = "VIRTUAL_CLASS_STRONGHOLD"
+provideName4 = "base"
+
+////////////////////////////////////
+
+[PoweredBuildingClass]
+powerTap1 = "HP_TAP_1"
+powerName = "fblung"
+detectRange = 100
+
+[BuildingClass]
+soundAmbient = "sdow01.wav"
+
+[ArmoryClass]
+soundBuild = "sbrecy02.wav"
+soundFinish = "iapc04.wav"
+
+[ArmoryGroup1]
+buildLabel = "Guns"
+buildItem1 = "apiong"
+buildItem2 = "aplock"
+buildItem3 = "apgaus"
+
+[ArmoryGroup2]
+buildLabel = "Cannons"
+buildItem1 = "apsplasma"
+buildItem2 = "apsonic"
+buildItem3 = "apquil"
+buildItem4 = "aparcc"
+
+[ArmoryGroup3]
+buildLabel = "Rockets"
+buildItem1 = "apmlock"
+buildItem2 = "apsting"
+
+[ArmoryGroup4]
+buildLabel = "Mortars"
+buildItem1 = "apsartl"
+buildItem2 = "apgas"
+buildItem3 = "apresn"
+buildItem4 = "appopg"
+
+[ArmoryGroup5]
+buildLabel = "Mines"
+buildItem1 = "apflar_s"
+buildItem2 = "apseek"
+buildItem3 = "approx"
+
+[ArmoryGroup6]
+buildLabel = "Specials"
+buildItem1 = "apblnk"
+buildItem2 = "apstatic"
+
+
+[ArmoryGroup7]
+buildLabel = "Shields"
+buildItem1 = "apshld"
+buildItem2 = "apdefl"
+buildItem3 = "apabso"
+
+[ArmoryGroup8]
+buildLabel = "Pilot"
+buildItem1 = "fpbazo"
+buildItem2 = "fpsnip"
+buildItem3 = "fpgren"
+buildItem4 = "fpjetp"
+
+[Lod1]
+//geometryName = "fbstroL1.xsi" ;geometry for lod1
+distance = 64                    ;bsphere under 200 pixel => switch to lod1
+dontShiftLOD = 1
+

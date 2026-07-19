@@ -1,0 +1,42 @@
+[WeaponClass]
+classLabel = "machinegun"
+
+// external geometry
+geometryName = "fgsnip__stand.xsi"
+geometryScale = 0.12
+animCount = 3
+animName1 = "stand"
+animFile1 = "fgsnip__stand.xsi"
+animName2 = "walk"
+animFile2 = "fgsnip__stand.xsi"
+//animName3 = "crouch"
+//animFile3 = "fgsnip__stand.xsi"
+animName3 = "jump"
+animFile3 = "fgsnip__stand.xsi"
+
+// cockpit geometry
+cockpitName = "fwrifl_cockpit_stand.xsi"
+cockpitScale = 0.12
+animCountCockpit = 3
+animNameCockpit1 = "stand"
+animFileCockpit1 = "fwrifl_cockpit_stand.xsi"
+animNameCockpit2 = "walk"
+animFileCockpit2 = "fwrifl_cockpit_run.xsi"
+//animNameCockpit3 = "crouch"
+//animFileCockpit3 = "fwrifl_cockpit_snipe.xsi"
+animNameCockpit3 = "jump"
+animFileCockpit3 = "fwrifl_cockpit_stand.xsi"
+
+ordName = "fsnip_c"
+wpnName = "Pulse"
+fireSound = "gmini00.wav"
+wpnReticle = "grifle_s"
+wpnCategory = "HAND"
+isAssault = 0
+isFlying = 0
+altName = NULL
+flashName = "fgsnip_c.flash"
+
+[CannonClass]
+shotDelay = 0.1
+shotVariance = 0.02

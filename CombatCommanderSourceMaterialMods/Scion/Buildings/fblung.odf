@@ -1,0 +1,41 @@
+[GameObjectClass]
+geometryName = "fblung00.fbx"
+classLabel = "powerlung"
+animCount = 1
+animName1 = "loop"
+animFile1 = "fblung00.fbx"
+//RunAnimation = "loop"
+//RunAnimIsLooped = true
+scrapCost = 20
+scrapValue = 3
+maxHealth = 3000
+maxAmmo = 0
+unitName = "Lung"
+heatSignature = 0.8
+imageSignature = 1.0
+radarSignature = 1.0
+ownsTerrain = 1
+isAssault = 0
+explosionName = "xbldxpl"
+
+canInteract = 1
+
+ClearBuildZone = 0 // -1 = auto, 0 = never, 1 = always. If 0/1, overrides collideable setting
+
+armorClass = H
+
+/////// PROVIDES ///////////////////
+
+provideCount = 2
+provideName1 = "fblung"
+provideName2 = "VIRTUAL_CLASS_POWERLUNG"
+
+////////////////////////////////////
+
+lightHard1 = "hp_light_1"
+lightName1 = "omniteal"
+
+[BuildingClass]
+// soundAmbient = cenv04.wav
+// soundAmbient = denv04.wav
+soundAmbient = ibpgen00.wav

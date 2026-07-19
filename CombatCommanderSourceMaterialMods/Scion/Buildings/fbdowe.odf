@@ -1,0 +1,88 @@
+[GameObjectClass]
+geometryName = "fbdowe00.fbx"
+classLabel = "supplydepot"
+animCount = 1
+animName1 = "loop"
+animFile1 = "fbdowe00.fbx"
+RunAnimation = "loop"
+RunAnimIsLooped = true
+collisionRadius = 1.0
+scrapCost = 50
+scrapValue = 10
+maxHealth = 5000
+maxAmmo = 0
+powerCost = 0
+unitName = "Dower"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+AllowUndergroundSpawn = 1
+
+armorClass = H
+
+buildSupport = "A"
+buildRequire = "F"
+
+/////// REQUIREMENTS ///////////////
+
+requireCount = 1
+requireName1 = "fbkiln"
+requireText1 = "Build Kiln"
+
+////////////////////////////////////
+
+
+/////// PROVIDES ///////////////////
+
+provideCount = 4
+provideName1 = "fbdowe"
+providename2 = "VIRTUAL_CLASS_SUPPLYDEPOT"
+provideName3 = "VIRTUAL_CLASS_DOWER"
+provideName4 = "base"
+
+////////////////////////////////////
+
+lightHard1 = "hp_light_1"
+lightName1 = "omniyellow"
+lightHard2 = "hp_light_2"
+lightName2 = "omniyellow"
+//lightHard3 = "hp_light_3"
+//lightName3 = "omniyellow"
+//lightHard4 = "hp_light_4"
+//lightName4 = "omniyellow"
+lightHard5 = "hp_light_5"
+lightName5 = "omniteal2"
+
+[BuildingClass]
+soundAmbient = "sdow01.wav"
+tunnelCount = 1
+
+tunnel01X0 = 3
+tunnel01Z0 = 1
+tunnel01Dx = 4
+tunnel01Dz = 4
+tunnel01Edge = "ttww"
+
+[PoweredBuildingClass]
+powerTap1 = "HP_TAP_1"
+powerName = "fblung"
+detectRange = 100
+
+[SupplyDepotClass]
+supplyRange = 32.0
+supplyRate = 150.0
+supplySound = "mnu_empt.wav"
+
+// Individual classification tweakers
+serviceSTs = 1
+serviceCraft = 1
+serviceBuildings = 0
+servicePilots = 1
+serviceOther = 0
+
+[Lod1]
+//geometryName = "fbdoweL1.fbx" ;geometry for lod1
+radius = 50                    ;bsphere under 200 pixel => switch to lod1
+
+

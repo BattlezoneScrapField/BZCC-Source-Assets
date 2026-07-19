@@ -1,0 +1,75 @@
+// ====================
+// LOCK DOWN GROUND HIT
+// ====================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "sonic02.wav"
+
+damageRadius = 0.0
+
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+
+particleTypes = 3
+
+particleClass1 = "xglockgnd_a.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xglockgnd_a.elec"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xglockgnd_a.glow"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_planar"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 155" 
+finishColor = "62 255 255 0"
+startRadius = 0.1
+finishRadius = 4.0
+animateTime = 0.2
+
+[glow]
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "62 255 255 80"
+finishColor = "62 255 255 180"
+startRadius = 8.0
+finishRadius = 0.0
+animateTime = 0.5
+rotationRate = 0.0
+BottomInteractsWithTerrain = false
+
+[elec]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_twirl_trail"
+emitLife = 0.1
+animateTime = 0.1
+emitDelay = 0.1
+textureName = "elecsphere.tga"
+textureBlend = "one one modulate"
+startColor = "62 255 255 180" 
+finishColor = "62 255 255 80" 
+startRadius = 4.0
+finishRadius = 0.0
+rotationRate = 10.0
+emitinherit = "1.0 1.0 1.0"
+BottomInteractsWithTerrain = false

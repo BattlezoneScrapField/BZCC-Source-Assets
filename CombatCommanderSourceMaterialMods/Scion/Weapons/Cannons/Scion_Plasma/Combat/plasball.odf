@@ -1,0 +1,107 @@
+[OrdnanceClass]
+classLabel = "BULLET"
+shotSound = "spplasball.wav"
+shotGeometry = NULL
+shotRadius = 2.0
+xplGround = "xsplasgnd_c"
+xplVehicle = "xsplascar_c"
+xplBuilding = "xsplascar_c"
+
+renderName = "plasball.render"
+
+ammoCost = 10
+lifeSpan = 1.0 // 100m
+shotSpeed = 100.0
+
+damageValue(N) = 100 // none
+damageValue(L) = 80 // light
+damageValue(H) = 16 // heavy
+
+damageValue(S) = 80 // standard
+damageValue(D) = 100 // deflection
+damageValue(A) = 16 // absorbption
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "plasball.flare1"
+renderName2 = "plasball.trailr"
+renderName3 = "plasball.core"
+renderName4 = "plasball.sparks"
+renderName5 = "plasball.light"
+
+[Flare1]
+renderBase = "draw_twirl_trail"
+textureName = "plasmahitcore.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255" // "255 63 55 255"
+finishColor = "255 0 0 255" // "255 63 55 255"
+startRadius = 0.5
+finishRadius = 0.02
+rotationRate = 12.0
+animateTime = 0.02
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 3.0"
+emitLife = 0.02
+
+[TrailR]
+renderBase = "draw_twirl_trail"
+textureName = "plasmahitcore.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 200" // "255 63 55 255"
+finishColor = "255 0 0 0" // "255 63 55 255"
+startRadius = 0.3
+finishRadius = 0.0
+animateTime = 0.6
+rotationRate = 5.0
+emitDelay = 0.08
+emitVelocity = "0.1 0.1 0.0"
+emitVariance = "15.0 15.0 0.0"
+emitLife = 0.6
+
+[Core]
+renderBase = "draw_sprite"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "255 145 10 120"
+finishColor = "255 145 10 120"
+startRadius = 1.2 
+finishRadius = 1.2 
+
+[Sparks]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.03
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "19.0 19.0 19.0"
+emitLife = 0.15
+textureName = "spark2.tga"
+textureBlend = "one one modulate"
+startColor = "255 145 38 255"
+finishColor = "255 145 38 0"
+startRadius = 0.13
+finishRadius = 0.06
+animateTime = 0.15
+rotationRate = 2.0
+
+[Light]
+renderBase = "draw_light"
+startColor = "255 63 0 855"
+finishColor = "155 0 0 0"
+startRadius = 5.0
+finishRadius = 5.0
+lensFlare = 0
+
+//renderBase = "draw_twirl_trail"
+//textureName = "plasma.tga"
+//textureBlend = "one one modulate"
+//startColor = "255 60 0 255" // "255 63 55 255"
+//finishColor = "255  0 0" // "255 63 55 255"
+//startRadius = 0.2
+//finishRadius = 0.001
+//animateTime = 0.05
+//rotationRate = 0.05
+//emitDelay = 0.008
+//emitVelocity = "0.2 0.2 0.0"
+//emitVariance = "20.0 20.0 0.0"
+//emitLife = 0.05

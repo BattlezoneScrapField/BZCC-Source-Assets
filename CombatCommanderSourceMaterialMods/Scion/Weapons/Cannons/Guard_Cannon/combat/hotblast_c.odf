@@ -1,0 +1,87 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 0.5
+
+xplGround = "xmslgnd"
+xplVehicle = "xmslcar"
+xplBuilding = "xmslbld"
+
+renderName = "hotblast_c.render"
+
+shotSound = "Ordin_a.wav"
+
+ammoCost = 10
+lifeSpan = 1.0 // 100m
+shotSpeed = 100.0
+
+damageValue(N) = 100 // none
+damageValue(L) = 50 // light
+damageValue(H) = 8 // heavy
+
+damageValue(S) = 50 // standard
+damageValue(D) = 100 // deflection
+damageValue(A) = 8 // absorbption
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "hotblast_c.flare1"
+renderName2 = "hotblast_c.trailr"
+renderName3 = "hotblast_c.core"
+renderName4 = "hotblast_c.sparks"
+
+[Flare1]
+renderBase = "draw_twirl_trail"
+textureName = "plasmahitcore.tga"
+textureBlend = "one one modulate"
+startColor = "255 10 10 255" // "255 63 55 255"
+finishColor = "255 0 0 255" // "255 63 55 255"
+startRadius = 0.3
+finishRadius = 0.0
+animateTime = 0.02
+rotationRate = 12.0
+emitDelay = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 3.0"
+emitLife = 0.02
+
+[TrailR]
+renderBase = "draw_twirl_trail"
+textureName = "plasmahitcore.tga"
+textureBlend = "one one modulate"
+startColor = "255 10 10 200" // "255 63 55 255"
+finishColor = "255 0 0 0" // "255 63 55 255"
+startRadius = 0.3
+finishRadius = 0.0
+rotationRate = 5.0
+animateTime = 0.6
+emitDelay = 0.08
+emitVelocity = "0.1 0.1 0.0"
+emitVariance = "15.0 15.0 0.0"
+emitLife = 0.6
+
+[Core]
+renderBase = "draw_sprite"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "255 95 10 120"
+finishColor = "255 95 10 120"
+startRadius = 0.9
+finishRadius = 0.9
+
+[Sparks]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.03
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "19.0 19.0 19.0"
+emitLife = 0.15
+textureName = "spark2.tga"
+textureBlend = "one one modulate"
+startColor = "255 95 38 255"
+finishColor = "255 95 38 0"
+startRadius = 0.1
+finishRadius = 0.04
+animateTime = 0.15
+rotationRate = 2.0

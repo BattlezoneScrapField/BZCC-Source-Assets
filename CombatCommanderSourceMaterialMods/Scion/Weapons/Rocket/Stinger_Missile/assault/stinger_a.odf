@@ -1,0 +1,110 @@
+[OrdnanceClass]
+classLabel = "stinger_c"
+
+renderName = "stinger_a.render"
+
+xplGround = "xstinggnd_c"
+xplVehicle = "xstingcar_c"
+xplBuilding = "xstingcar_c"
+
+ammoCost = 25
+lifeSpan = 2.5 // 100m
+shotSpeed = 40.0
+
+damageValue(N) = 140 // 280 // none // 480 960 1440 1920 2400 2880
+damageValue(L) = 125 // 250 // light // 375 750 1125 1500 1875 2250
+damageValue(H) = 100 // 200 // heavy // 250 500 750 100 1250 1500
+
+damageValue(S) = 125 // 250 // standard // 375 750 1125 1500 1875 2250
+damageValue(D) = 100 // 200 // deflection // 400 800 1200 1600 2000 2400
+damageValue(A) = 140 // 280 // absorbtion // 330 660 990 1320 1675 1980
+
+[MissileClass]
+omegaTurn = 1.0
+omegaWaver = 1.0
+rateWaver = 4.0
+
+[ThermalMissileClass]
+coneAngle = 0.5
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 6
+renderName1 = "stinger_a.flare"
+renderName2 = "stinger_a.halo"
+renderName3 = "stinger_a.flame"
+renderName4 = "stinger_a.trail"
+renderName5 = "stinger_a.sparks"
+renderName6 = "stinger_a.smoke"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 230 100 255"
+finishColor = "255 230 100 255"
+startRadius = 0.75
+finishRadius = 0.75
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "255 180 0 164"
+finishColor = "255 180 0 164"
+startRadius = 0.8
+finishRadius = 0.8
+
+[Flame]
+renderBase = "draw_trail"
+textureName = "firetrail1.tga"
+textureBlend = "one one modulate"
+textureRate = 0.5
+startColor = "255 230 70 255"
+finishColor = "255 200 0 0"
+startRadius = 0.15
+finishRadius = 0.04
+segmentTime = 0.15
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.3
+startColor =  "255 255 80 40"// "100 0 0 100" 
+finishColor =  "100 100 40 0" // "100 100 100 0"
+startRadius = 0.15
+finishRadius = 0.35
+segmentTime = 1.0
+textureSpeed = 4.0
+
+[Sparks]
+renderBase = "draw_twirl_trail"
+textureName = "spark2.tga"
+textureBlend = "one one modulate"
+startColor = "242 147 57 255"
+finishColor = "237 233 62 0"
+startRadius = 0.11
+finishRadius = 0.04
+animateTime = 0.15
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "18.9 18.9 18.9"
+emitLife = 0.1
+BottomInteractsWithTerrain = false
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.04
+emitVariance = "5.5 5.8 5.5"
+emitInherit = "0.03 0.03 0.03"
+emitLife = 0.5
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "100 67 40 30"
+finishColor = "5 5 5 0"
+startRadius = 0.4
+finishRadius = 1.9
+animateTime = 1.0
+rotationRate = 2.3
+BottomInteractsWithTerrain = false

@@ -1,0 +1,63 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+shotGeometry = "ioartl00.fbx"
+shotSound = "Ordin_c.wav"
+
+xplGround = "xpopgnd"
+xplVehicle = "xpopcar"
+xplBuilding = "xpopcar"
+
+renderName = "poprocket.render"
+
+ammoCost = 30
+lifeSpan = 4.0 // 200m
+shotSpeed = 50.0
+
+damageValue(N) = 250 // none // 350 = 250
+damageValue(L) = 220 // light // 300 = 200
+damageValue(H) = 100 // heavy // 220 = 150
+
+damageValue(S) = 220 // standard // 300 = 200
+damageValue(D) = 180 // deflection // 305 = 203.3
+damageValue(A) = 250 // absortion // 275 = 183.3
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 6.0
+velocForward = 50.0		// powered speed of the missile
+accelThrust = 30.0		// rate the missile can change speed
+delayTime = 1.0			// homing delay time (zero turn rate)
+rampTime = 2.0			// homing ramp time (from zero to full turn rate)
+avoidRange = 10.0		// terrain obstacle-avoidance range
+avoidStrength = 5.0		// terrain obstacle-avoidance strength (~2 seems best)
+
+[ThermalMissileClass]
+coneAngle = 3.14
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "poprocket.flare"
+renderName2 = "poprocket.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "flare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 127"
+finishColor = "255 255 255 127"
+startRadius = 2.0
+finishRadius = 2.0
+
+[Trail]
+renderBase = "draw_twirl_trail"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 127"
+finishColor = "255 0 0 0"
+startRadius = 0.3
+finishRadius = 1.0
+animateTime = 0.5
+emitDelay = 0.005
+emitVariance = "3.0 3.0 3.0"
+emitLife = 0.5

@@ -1,0 +1,48 @@
+// =====================
+// LOCK DOWN VEHICLE HIT
+// =====================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "ashield01.wav"
+
+damageRadius = 0.0
+
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+
+particleTypes = 2
+
+particleClass1 = "xglockdone_c.elec"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleInherit1 = "1.0 1.0 1.0"
+
+particleClass2 = "xglockcar_c.core"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+particleInherit2 = "1.0 1.0 1.0"
+
+
+[elec]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl_trail"
+emitLife = 0.1
+animateTime = 0.2
+emitDelay = 0.1
+textureName = "elecsphere.tga"
+textureBlend = "one one modulate"
+startColor = "62 255 255 180" 
+finishColor = "62 255 255 80" 
+startRadius = 0.0
+finishRadius = 12.0
+rotationRate = 10.0
+emitinherit = "1.0 1.0 1.0"
+BottomInteractsWithTerrain = false

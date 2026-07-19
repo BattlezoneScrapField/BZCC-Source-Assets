@@ -1,0 +1,64 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+shotSound = "gquil03.wav"
+
+xplGround = "xquillgnd_a"
+xplVehicle = "xquillcar_a"
+xplBuilding = "xquillcar_a"
+
+renderName = "quill_a.render"
+
+ammoCost = 10
+lifeSpan = 0.2 // 50m
+shotSpeed = 250.0
+
+damageValue(N) = 53.4 // none // 400.5
+damageValue(L) = 50.8 // light // 381
+damageValue(H) = 46.7 // heavy // 350.1
+
+damageValue(S) = 50.8 // standard // 381
+damageValue(D) = 40 // deflection // 300
+damageValue(A) = 53.4 // absorbtion // 400.5
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "quill_a.trail"
+renderName2 = "quill_a.light"
+renderName3 = "quill_a.smoke"
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 70 50 255"
+finishColor = "255 0 0 0"
+textureRate = 0.5
+startRadius = 0.25
+finishRadius = 0.005
+segmentTime = 0.3
+textureSpeed = 16.0
+
+[Light]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 255"
+finishColor = "255 0 0 255"
+startRadius = 2.0
+finishRadius = 2.0
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "50 40 50 80" //"153 153 153 128"
+finishColor = "40 20 30 0"
+startRadius = 0.2
+finishRadius = 1.0
+animateTime = 1.0
+emitDelay = 0.05 //0.02
+emitVelocity = "0.0 0.0 1.0"
+emitVariance = "0.6 0.6 0.6"
+emitLife = 1.0

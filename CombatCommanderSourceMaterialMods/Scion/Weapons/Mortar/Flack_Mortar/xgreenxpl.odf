@@ -1,0 +1,131 @@
+// =============
+// SCION VEHICLE EXPLOSION
+// =============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 8
+
+particleClass1 = "xgreengnd.Shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleInherit1 = "0.5 0.5 0.5"
+
+particleClass2 = "xgreengnd.SmokePlume"
+particleCount2 = 6 //10
+particleVeloc2 = "10.0 35.0 10.0"
+particleInherit2 = "0.5 0.5 0.5"
+
+particleClass3 = "xgreengnd.Light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleInherit3 = "0.5 0.5 0.5"
+
+particleClass4 = "xgreengnd.FlameHeat"
+particleCount4 = 6
+particleVeloc4 = "10.0 10.0 10.0"
+particleBias4 = "0.0 6.0 0.0"
+particleInherit4 = "0.5 0.5 0.5"
+
+particleClass5 = "xgreengnd.Flames"
+particleCount5 = 5 //8
+particleVeloc5 = "19.0 19.0 19.0"
+particleBias5 = "0.0 10.0 0.0"
+particleInherit5 = "0.5 0.5 0.5"
+
+particleClass6 = "xgreenxpl.HullAsh"
+particleCount6 = 10
+particleVeloc6 = "110.0 90.0 110.0"
+particleBias6 = "0.0 12.0 0.0"
+particleInherit6 = "0.5 0.5 0.5"
+
+particleClass7 = "xgreenxpl.Secondary"
+particleCount7 = 2
+particleVeloc7 = "50.0 50.0 50.0"
+particleInherit7 = "0.5 0.5 0.5"
+
+particleClass8 = "xgreenxpl.lightflare"
+particleCount8 = 1
+particleVeloc8 = "0.0 0.0 0.0"
+particleInherit8 = "0.5 0.5 0.5"
+
+particleClass9 = "xgreenxpl.trails"
+particleCount9 = 6
+particleVeloc9 = "110.0 90.0 110.0"
+particleBias9 = "0.0 1.0 0.0"
+particleInherit9 = "0.5 0.5 0.5"
+
+explSound = "xmv1.wav"
+
+damageRadius = 50.0
+
+damageValue(N) = 100 // none
+damageValue(L) = 50 // light
+damageValue(H) = 5 // heavy
+
+damageValue(S) = 50 // standard
+damageValue(D) = 100 // deflection
+damageValue(A) = 5 // absorbtion
+
+
+[Secondary]
+simulateBase = "sim_smoke"
+lifeTime = 0.45
+startDelay = 0.25
+renderBase = "draw_emit"
+emitDelay = 0.2
+emitName = "xgreenxpl.SecondaryRender"
+emitVariance = "3.0 3.0 3.0"
+emitVelocity = "0.0 0.0 0.0"
+emitInherit = "1.0 1.0 1.0"
+
+	[SecondaryRender]
+	simulateBase = "sim_smoke"
+	lifeTime = 1.9
+	renderBase = "draw_multi"
+	renderCount = 5
+	renderName1 = "xgreenxpl.LightFlare"
+	renderName2 = "xgreengnd.FlameHeat"
+	renderName3 = "xgreengnd.Flames"
+	renderName4 = "xgreengnd.Flames"
+	renderName5 = "xgreengnd.smokeplume"
+
+[LightFlare]
+simulateBase = "sim_smoke"
+lifeTime = 0.2
+renderBase = "draw_twirl"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "155 255 66 200"
+finishColor = "155 255 66 0"
+startRadius = 10.0
+finishRadius = 2.0
+animateTime = 0.2
+rotationRate = 5.0
+BottomInteractsWithTerrain = false
+
+[HullAsh]
+simulateBase = "sim_ember"
+lifeTime = 6.0
+renderBase = "draw_twirl"
+textureName = "spark.tga"
+textureBlend = "one one modulate"
+startColor = "155 255 20 255"
+finishColor = "155 255 200 0"
+startRadius = 0.2
+finishRadius = 0.2
+animateTime = 6.0
+BottomInteractsWithTerrain = false
+
+[Trails]
+simulateBase = "sim_ember"
+lifeTime = 2.0
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "155 255 20 255"
+finishColor = "200 255 0 0"
+startRadius = 0.04
+finishRadius = 0.0
+trailTime = 0.8
+segmentTime = 0.5

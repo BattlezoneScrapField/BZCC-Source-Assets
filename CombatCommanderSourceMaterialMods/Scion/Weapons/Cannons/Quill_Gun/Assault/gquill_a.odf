@@ -1,0 +1,31 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gquill_c"
+ordName = "quill_a"
+wpnName = "Fang"
+fireSound = "chaff01.wav"
+wpnReticle = "gfang_a"
+wpnCategory = "CANN"
+isAssault = 1
+aiRange = 50
+flashName = "gquill_a.flash"
+
+[CannonClass]
+shotDelay = 2.0 // .5/sec
+salvoCount = 15
+salvoDelay = 0.001
+shotVariance = 0.5
+shotAlternate = 0
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_light"
+startColor = "255 0 0 300"
+finishColor = "255 0 0 0"
+startRadius = 20.0
+finishRadius = 20.0
+animateTime = 3.5
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
