@@ -1,0 +1,7 @@
+[GameObjectClass]
+geometryName = "peclif04.fbx"
+classLabel = "peclif01"
+
+unitName = "peclif04"
+
+[BuildingClass]

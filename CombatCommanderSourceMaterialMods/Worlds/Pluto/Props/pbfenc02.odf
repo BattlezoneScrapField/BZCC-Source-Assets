@@ -1,0 +1,29 @@
+[GameObjectClass]
+baseName = "pbfenc01"
+geometryName = "pbfenc02.fbx"
+classLabel = "i76building"
+collisionRadius = 1.0
+scrapCost = 8
+scrapValue = 3
+maxHealth = 10
+maxAmmo = 0
+unitName = "Fence"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+ownsTerrain = 1
+//canCollide = 1
+armorClass = N
+AlignTerrainReplaceType = 5
+
+[BuildingClass]
+bldEdge = "wwww"
+tunnelCount = 1
+tunnel01X0 = 0
+tunnel01Z0 = 0
+tunnel01DX = 0
+tunnel01DZ = 0
+tunnel01Edge = "wwww"

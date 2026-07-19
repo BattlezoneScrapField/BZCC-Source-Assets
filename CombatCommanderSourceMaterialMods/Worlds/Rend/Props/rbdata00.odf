@@ -1,0 +1,27 @@
+[GameObjectClass]
+geometryName = "rbdata00.fbx"
+classLabel = "i76building"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 50000
+maxAmmo = 0
+unitName = "REND MACHINE"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 5.0
+canDetect = 1
+canInteract = 0
+canSnipe = 0
+isTerrain = 1
+
+armorClass = H
+
+[BuildingClass]
+tunnelCount = 1
+
+tunnel01X0 = 7
+tunnel01Z0 = 1
+tunnel01DX = 2
+tunnel01DZ = 8
+tunnel01Edge = "twww"
