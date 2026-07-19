@@ -1,0 +1,63 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+
+xplGround = "xbulgnd"
+xplVehicle = "xbulcar"
+xplBuilding = "xbulbld"
+
+ammoCost = 2
+lifeSpan = 0.667 // 200.1m
+shotSpeed = 300.0
+
+damageValue(N) = 5
+damageValue(L) = 3
+damageValue(H) = 0
+
+damageValue(S) = 3
+damageValue(D) = 5
+damageValue(A) = 3
+
+renderName = "tracer.render"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "tracer.core"
+renderName2 = "tracer.tracer"
+renderName3 = "tracer.trail"
+
+
+[Core]
+renderBase = "draw_sprite"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "181 101 255 100"
+finishColor = "181 101 255 100"
+startRadius = 0.30
+finishRadius = 0.30
+
+[tracer]
+renderBase = "draw_tracer"
+textureBlend = "one one modulate"
+textureName = "spark2.tga"
+startColor = "120 127 230 250"
+finishColor = "0 0 255 0"
+startRadius = 0.33
+finishRadius = 0.33
+tracerLength = 5.6
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.5
+startColor = "108 80 156 100"
+finishColor = "102 106 158 0"
+startRadius = 0.075
+finishRadius = 0.0
+segmentTime = 0.1
+TextureSpeed = -16.0
+animateTime = 0.1
+
+

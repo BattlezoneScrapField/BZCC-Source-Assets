@@ -1,0 +1,27 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gtrainer_a"
+ordName = "trainer_c"
+wpnName = "Trainer"
+fireSound = "gmini01.wav"
+wpnReticle = "gminigun"
+wpnCategory = "GUN"
+isAssault = 0
+flashName = "gtrainer_c.flash"
+aiRange = 99.9
+
+[CannonClass]
+shotDelay = 0.10
+shotVariance = 0.01
+
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 255"
+finishColor = "255 255 255 255"
+startRadius = 3.0
+finishRadius = 1
+animateTime = 0.1
+geomName = "g_sflash.xsi"

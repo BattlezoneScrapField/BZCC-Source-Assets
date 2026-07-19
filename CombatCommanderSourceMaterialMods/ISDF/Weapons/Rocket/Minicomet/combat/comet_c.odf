@@ -1,0 +1,128 @@
+//HORNET MISSLE
+[OrdnanceClass]
+classLabel = "radarmissile"
+shotGeometry = "iomhrn00.fbx"
+geometryScale = 2.0
+xplGround = "xcomet_gnd"
+xplVehicle = "xcomet_car"
+xplBuilding = "xcomet_car"
+
+lifeSpan = 5.0
+shotSpeed = 75.0
+ammoCost = 100
+
+damageValue(N) = 500 // none
+damageValue(L) = 400 // light
+damageValue(H) = 300 // heavy
+
+damageValue(S) = 400 // standard
+damageValue(D) = 300 // deflection
+damageValue(A) = 500 // absorbtion
+
+shotSound = "hrckt02.wav"
+renderName = "comet_c.render"
+
+[MissileClass]
+omegaTurn = 1.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 7
+renderName1 = "comet_c.Light"
+renderName2 = "comet_c.SoftFlare"
+renderName3 = "comet_c.FlameTrail"
+renderName4 = "comet_c.Flames"
+renderName5 = "comet_c.SmokeTrail"
+renderName6 = "comet_c.Smoke"
+renderName7 = "comet_c.Sparks"
+
+[Light]
+renderBase = "draw_light"
+startColor = "163 123 255 280"
+finishColor = "163 123 255 280"
+startRadius = 38.0
+finishRadius = 38.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
+
+[SoftFlare]
+renderBase = "draw_twirl"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "149 117 255 55"
+finishColor = "149 117 255 55"
+startRadius = 2.3
+finishRadius = 2.3
+rotationRate = 1.5
+BottomInteractsWithTerrain = false
+
+[Flames]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "187 99 255 255"
+finishColor = "163 123 255 0"
+startRadius = 0.19
+finishRadius = 0.03
+rotationRate = 2.0
+animateTime = 0.04
+emitDelay = 0.0015
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "18.9 18.9 18.9"
+emitLife = 0.04
+
+[FlameTrail]
+renderBase = "draw_trail"
+textureName = "firetrail2.tga"
+textureBlend = "one one modulate"
+textureRate = 0.4
+startColor = "254 136 65 255"
+finishColor = "163 123 255 0"
+startRadius = 0.15
+finishRadius = 0.02
+animateTime = 0.08
+segmentTime = 0.08
+segmentLength = 0.6
+texturespeed = -4.0
+
+[SmokeTrail]
+renderBase = "draw_trail"
+textureName = "wispytrail.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureRate = 0.03
+startColor = "113 81 178 100"
+finishColor = "96 96 96 0"
+startRadius = 1.6
+finishRadius = 0.8
+segmentLength = 3.0
+segmentTime = 1.6
+animateTime = 1.6
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.01
+emitVariance = "5.5 5.8 5.5"
+emitInherit = "0.03 0.03 0.03"
+emitLife = 2.0
+textureName = "smoke2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "113 81 178 100"
+finishColor = "46 46 46 0"
+startRadius = 0.6
+finishRadius = 2.0
+animateTime = 1.0
+
+[Sparks]
+renderBase = "draw_twirl_trail"
+textureName = "spark2.tga"
+textureBlend = "one one modulate"
+startColor = "98 216 255 255"
+finishColor = "34 55 255 0"
+startRadius = 0.12
+finishRadius = 0.08
+animateTime = 0.15
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "18.9 18.9 18.9"
+emitLife = 0.15

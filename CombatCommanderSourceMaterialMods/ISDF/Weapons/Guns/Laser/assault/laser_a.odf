@@ -1,0 +1,52 @@
+[OrdnanceClass]
+classLabel = "beam"
+
+shotGeometry = NULL
+xplGround = "xlasegnd"
+xplVehicle = "xlasecar"
+xplBuilding = "xlasebld"
+
+renderName = "laser_a.render"
+
+ammoCost = 4
+lifeSpan = 100e-6 // 100m
+shotSpeed = 1e6
+
+damageValue(N) = 35 // none // 350
+damageValue(L) = 20 // light // 200
+damageValue(H) = 7.5 // heavy // 75
+
+damageValue(S) = 20 // standard // 200
+damageValue(D) = 35 // deflection // 350
+damageValue(A) = 7.5 // absorbtion // 75
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "laser_a.HotCore"
+renderName2 = "laser_a.EnergyFringe"
+
+[HotCore]
+renderBase = "draw_bolt"
+textureBlend = "one one modulate"
+textureName = "blastenergy.tga"
+textureRate = 0.5
+startColor = "190 190 255 255"
+finishColor = "50 50 50 0"
+startRadius = 0.2
+finishRadius = 0.04
+segmentTime = 0.15
+textureSpeed = -32.0
+
+[EnergyFringe]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "blastenergy.tga"
+textureRate = 0.5
+startColor = "30 10 255 40"
+finishColor = "50 20 255 0"
+startRadius = 0.3
+finishRadius = 0.08
+segmentTime = 0.3
+textureSpeed = -16.0
+

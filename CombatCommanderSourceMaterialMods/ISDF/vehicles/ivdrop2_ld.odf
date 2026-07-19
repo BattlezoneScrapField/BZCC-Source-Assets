@@ -1,0 +1,52 @@
+[GameObjectClass]
+classLabel = "ivdrop2_op"
+
+ownsTerrain = 0
+canCollide = 0
+
+alwaysClip = 1
+
+effectHard1 = "hp_trail_1"
+effectName1 = "ivdrop2_ld.trail"
+effectHard2 = "hp_trail_2"
+effectName2 = "ivdrop2_ld.trail"
+
+effectHard3 = "hp_emit_1"
+effectName3 = "ivdrop2_ld.posroll"
+
+[BuildingClass]
+
+
+[trail]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.05
+emitDelayVar = 0.03
+emitVelocity = "0.0 0.0 10.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = .5
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "0 100 255 127"
+finishColor = "0 100 255 0"
+startRadius = 15
+finishRadius = 1
+animateTime = .5
+rotationRate = 2.0
+zBiaz = 5.0f
+maxDist	= 2000.0f
+maxRadii = 2000.0f
+
+[posroll]
+simulateBase = "sim_dust"
+lifeTime = 3
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "32 32 32 255"
+finishColor = "127 127 127 0"
+startRadius = 2
+finishRadius = 1
+animateTime = 3
+rotationRate = 2
+

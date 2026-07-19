@@ -1,0 +1,52 @@
+[OrdnanceClass]
+classLabel = "beam"
+shotGeometry = NULL
+xplGround = "xlasegnd"
+xplVehicle = "xlasecar"
+xplBuilding = "xlasebld"
+
+renderName = "laser_c.render"
+
+ammoCost = 20
+lifeSpan = 120e-6 // 120m
+shotSpeed = 1e6
+
+// was 5 salvos so I upped the damage
+
+damageValue(N) = 250 // none // 250
+damageValue(L) = 150 // light // 150
+damageValue(H) = 50 // heavy // 50
+
+damageValue(S) = 150 // standard // 150
+damageValue(D) = 250 // deflection // 250
+damageValue(A) = 50 // absorbtion // 50
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "laser_c.HotCore"
+renderName2 = "laser_c.EnergyFringe"
+
+[HotCore]
+renderBase = "draw_bolt"
+textureBlend = "one one modulate"
+textureName = "blastenergy.tga"
+textureRate = 0.5
+startColor = "190 190 255 255"
+finishColor = "50 50 50 0"
+startRadius = 0.1
+finishRadius = 0.02
+segmentTime = 0.15
+textureSpeed = -32.0
+
+[EnergyFringe]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "blastenergy.tga"
+textureRate = 0.5
+startColor = "30 10 255 40"
+finishColor = "50 20 255 0"
+startRadius = 0.15
+finishRadius = 0.04
+segmentTime = 0.3
+textureSpeed = -16.0

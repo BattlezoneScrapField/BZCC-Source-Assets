@@ -1,0 +1,93 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 0.5
+xplGround = "xmaggnd1_c"
+xplVehicle = "xmagcar1_c"
+xplBuilding = "xmagcar1_c"
+
+renderName = "charge_c.render"
+
+ammoCost = 5
+lifeSpan = 0.267 // 40.05m
+shotSpeed = 150.0
+
+damageValue(N) = 50 // none // 600
+damageValue(L) = 25 // light // 300
+damageValue(H) = 5 // heavy // 60
+
+damageValue(S) = 25 // standard // 300
+damageValue(D) = 50 // deflection // 600
+damageValue(A) = 10 // absorbtion // 120
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "charge_c.light"
+renderName2 = "charge_c.flame"
+renderName3 = "charge_c.smoke"
+renderName4 = "charge_c.trail"
+renderName5 = "charge_c.smoke2"
+
+[Light]
+renderBase = "draw_light"
+startColor = "255 50 200 255" 
+finishColor = "255 50 200 255" 
+startRadius = 10.0
+finishRadius = 10.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "plasmahitcore.tga"
+textureBlend = "one one modulate"
+startColor = "255 50 200 255" 
+finishColor = "155 55 10 0" 
+startRadius = 0.1
+finishRadius = 0.05
+rotationRate = 10.0
+animateTime = 0.05
+emitDelay = 0.001 //0.0005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 0.05
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 50 200 31" 
+finishColor = "155 55 10 0" 
+startRadius = 0.2
+finishRadius = 0.5
+rotationRate = 10.0
+animateTime = 0.05
+emitDelay = 0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 0.05
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 200 127" 
+finishColor = "155 55 0 0" 
+startRadius = 0.05
+finishRadius = 0.0
+segmentTime = 0.1
+
+[Smoke2]
+renderBase = "draw_twirl_trail"
+textureName = "smoke2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor =   "20 10 20 60" //"153 153 153 128"
+finishColor = "20 5 10 0"
+startRadius = 0.2
+finishRadius = 1.0
+animateTime = 1.0 //2.0
+emitDelay = 0.04
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.6 0.6 0.6"
+emitLife = 1.0 //2.0
+

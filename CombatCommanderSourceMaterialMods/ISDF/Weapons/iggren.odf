@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "mortar"
+geometryName = "iggren00.fbx"
+ordName = "igrenade"
+wpnName = "Grenade"
+wpnIcon = "wire_iggren%d.tga"
+fireSound = "mort01.wav"
+wpnReticle = "gmortar"
+wpnLadder = "gmortar.L0"
+wpnCategory = "PACK"
+localAmmo = 3
+canSelect = false
+
+[CannonClass]
+shotDelay = 2.0

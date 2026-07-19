@@ -1,0 +1,22 @@
+[WeaponClass]
+classLabel = "radarlauncher"
+altName = "gcomet_a"
+wpnName = "Mini-Comet"
+ordName = "comet_c"
+fireSound = "gcome00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "ROCK"
+isAssault = 0
+needLOS = 0
+
+[LauncherClass]
+lockRange = 250.0
+shotDelay = 1.5
+lockDelay = 0.5
+coneAngle = 0.15
+lockingReticle = "gcomet.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gcomet.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gcomet.1"

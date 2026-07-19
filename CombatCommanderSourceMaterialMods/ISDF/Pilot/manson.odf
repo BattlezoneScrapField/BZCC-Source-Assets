@@ -1,0 +1,28 @@
+[GameObjectClass]
+classLabel = "i76building"
+//geometryScale = 0.13
+geometryName = "manson01_isdf01.fbx"
+
+animCount = 2
+animName1 = "line1"
+animFile1 = "manson01_isdf01.fbx"
+animName2 = "line2"
+animFile2 = "manson02_isdf01.fbx"
+
+scrapCost = 0
+scrapValue = 0
+pilotCost = 1
+maxHealth = 100
+maxAmmo = 100
+addAmmo = 10
+unitName = "Major Manson"
+aiName = ""
+aiName2 = ""
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+ownsTerrain = 0
+canCollide = 0

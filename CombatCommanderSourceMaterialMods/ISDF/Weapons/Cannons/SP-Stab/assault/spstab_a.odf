@@ -1,0 +1,15 @@
+[OrdnanceClass]
+classLabel = "spstab_c"
+
+renderName = "spstab_c.render"
+
+ammoCost = 15
+lifeSpan = 2.0 // 150m
+
+damageValue(N) = 600 // none // 400
+damageValue(L) = 562.5 // light // 375
+damageValue(H) = 525 // heavy // 350
+
+damageValue(S) = 562.5 // standard // 375
+damageValue(D) = 500 // deflection // 333
+damageValue(A) = 600 // absorbtion // 400

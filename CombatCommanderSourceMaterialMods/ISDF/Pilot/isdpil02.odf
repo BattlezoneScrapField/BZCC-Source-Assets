@@ -1,0 +1,16 @@
+[GameObjectClass]
+geometryName = "isdpil02.fbx"
+//geometryScale = 0.12
+classLabel = "plant"
+scrapCost = 0
+scrapValue = 0
+pilotCost = 1
+maxHealth = 100
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+
+
+
+
+

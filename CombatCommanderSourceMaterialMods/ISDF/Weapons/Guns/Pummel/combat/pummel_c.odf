@@ -1,0 +1,30 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+xplGround = "xchaingnd_c"
+xplVehicle = "xchaincar_c"
+xplBuilding = "xchainbld_c"
+
+renderName = "pummel_c.render"
+
+ammoCost = 3
+lifeSpan = 0.33 // 99m
+shotSpeed = 300.0
+
+damageValue(N) = 15 // none
+damageValue(L) = 13 // light
+damageValue(H) = 10 // heavy
+
+damageValue(S) = 13 // standard
+damageValue(D) = 10 // deflection
+damageValue(A) = 15 // absorbtion
+
+[Render]
+renderBase = "draw_tracer"
+textureBlend = "one one modulate"
+textureName = "spark2.tga"
+startColor = "232 155 64 250"
+finishColor = "232 155 64 0"
+startRadius = 0.35
+finishRadius = 0.35
+tracerLength = 5.6

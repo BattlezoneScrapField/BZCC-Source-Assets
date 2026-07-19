@@ -1,0 +1,21 @@
+[GameObjectClass]
+baseName = "ibcrat00"
+geometryName = "ibcrat02.fbx"
+classLabel = "i76building"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Stacked Crates"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 5.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+isAssault = 0
+
+ownsTerrain = 1
+
+[BuildingClass]

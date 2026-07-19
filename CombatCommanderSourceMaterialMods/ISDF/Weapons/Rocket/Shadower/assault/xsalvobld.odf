@@ -1,0 +1,71 @@
+// ===================
+// MISSILE BUILDING HIT
+// ===================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+
+
+explSound = "xsv2.wav"
+
+damageRadius = 5.0
+
+damageValue(N) = 75 // none
+damageValue(L) = 55 // light
+damageValue(H) = 15 // heavy
+
+damageValue(S) = 55 // standard
+damageValue(D) = 75 // deflection
+damageValue(A) = 35 // absorbtion
+
+particleTypes = 11
+
+
+particleClass1 = "xsalvocar.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xsalvocar.light"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xsalvocar.puff"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xsalvocar.shock"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xsalvognd.Ash"
+particleCount5 = 2
+particleVeloc5 = "30.0 30.0 30.0"
+
+particleClass6 = "xsalvognd.blackChunks"
+particleCount6 = 2
+particleVeloc6 = "30.0 30.0 30.0"
+
+particleClass7 = "xsalvognd.Trails"
+particleCount7 = 2
+particleVeloc7 = "30.0 30.0 30.0"
+
+particleClass8 = "xsalvognd.FlameHeat"
+particleCount8 = 4
+particleVeloc8 = "5.0 5.0 5.0"
+particlePosVar8 = "3.0 3.0 3.0"
+
+particleClass9 = "xsalvognd.Flames"
+particleCount9 = 5
+particleVeloc9 = "8.7 8.7.0 8.7"
+particlePosVar9 = "3.0 3.0 3.0"
+
+particleClass10 = "xsalvognd.ExplodeSprites"
+particleCount10 = 2
+particleVeloc10 = "2.7 2.7 2.7"
+particlePosVar10 = "3.0 3.0 3.0"
+
+particleClass11 = "xsalvognd.SmokePuffCloud"
+particleCount11 = 4
+particleVeloc11 = "20.0 20.0 20.0"
+particlePosVar11 = "3.0 3.0 3.0"

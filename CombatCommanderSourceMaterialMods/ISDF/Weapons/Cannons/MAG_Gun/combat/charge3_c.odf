@@ -1,0 +1,94 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 0.5
+xplGround = "xmaggnd3_c"
+xplVehicle = "xmagcar3_c"
+xplBuilding = "xmagcar3_c"
+
+renderName = "charge3_c.render"
+
+ammoCost = 10
+lifeSpan = 0.67 // 100.5m
+shotSpeed = 150.0
+
+damageValue(N) = 166.7 // none // 500.1
+damageValue(L) = 116.7 // light // 350.1
+damageValue(H) = 40	   // heavy // 120
+
+damageValue(S) = 166.7 // standard // 350.1
+damageValue(D) = 116.7 // deflection // 500.1
+damageValue(A) = 40    // absorbtion // 120
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "charge3_c.light"
+renderName2 = "charge3_c.flame"
+renderName3 = "charge3_c.smoke"
+renderName4 = "charge3_c.trail"
+renderName5 = "charge3_c.smoke2"
+
+[Light]
+renderBase = "draw_light"
+startColor = "255 50 50 450" 
+finishColor = "255 50 50 450" 
+startRadius = 10.0
+finishRadius = 10.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 255" 
+finishColor = "255 45 45 0" 
+startRadius = 0.3
+finishRadius = 0.1
+rotationRate = 10.0
+animateTime = 0.1
+emitDelay = 0.002 //0.0015
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 0.1
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "blast.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 31" 
+finishColor = "255 45 45 0" 
+startRadius = 0.3
+finishRadius = 1.0
+rotationRate = 10.0
+animateTime = 0.1
+emitDelay = 0.005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 0.1
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 127" 
+finishColor = "255 45 45 0"
+startRadius = 0.15
+finishRadius = 0.0
+segmentTime = 0.2
+TextureRate = 0.4
+TextureSpeed = 4.0
+
+[Smoke2]
+renderBase = "draw_twirl_trail"
+textureName = "smoke2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor =   "25 10 10 60" //"153 153 153 128"
+finishColor = "25 5 5 0"
+startRadius = 0.2
+finishRadius = 1.0
+animateTime = 1.0
+emitDelay = 0.04
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.7 0.7 0.7"
+emitLife = 1.0

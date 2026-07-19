@@ -1,0 +1,92 @@
+// ===================
+// MAG CANNON 3 VEHICLE HIT
+// ===================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xsv2.wav"
+
+damageRadius = 0.0
+
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+particleTypes = 4
+
+particleClass1 = "xmagcar3_a.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleInherit1 = "0.5 0.5 0.5"
+
+particleClass2 = "xmagcar3_a.puff"
+particleCount2 = 5
+particleVeloc2 = "6.5 6.5 6.5"
+particleInherit2 = "0.5 0.5 0.5"
+
+particleClass3 = "xmagcar3_a.splat"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleInherit3 = "0.5 0.5 0.5"
+
+particleClass4 = "xmagcar3_a.light"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+particleInherit4 = "0.5 0.5 0.5"
+
+
+[Core]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "blast.tga" // flame
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 0 0 0"
+startRadius = 0.8
+finishRadius = 0.4
+animateTime = 1.0
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 1.2
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 55 55 255"
+finishColor = "255 0 0 0"
+startRadius = 0.8
+finishRadius = 2.75
+animateTime = 1.2
+rotaionRate = 10
+
+[Splat]
+simulateBase = "sim_smoke"
+lifeTime = 0.8
+renderBase = "draw_twirl"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 255"
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 1.0
+animateTime = 0.8
+BottomInteractsWithTerrain = false
+
+[Light]
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_light"
+startColor = "255 0 0 500"
+finishColor = "255 0 0 0"
+startRadius = 0.5
+finishRadius = 0.2
+animateTime = 0.5
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
+lensFlare = 0

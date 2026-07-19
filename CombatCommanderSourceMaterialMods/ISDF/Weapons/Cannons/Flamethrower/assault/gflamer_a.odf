@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "machinegun"
+altName = "gflamer_c"
+ordName = "flame"
+wpnName = "Flamethrower"
+fireSound = "flame01.wav" //"gflas00.wav"
+wpnReticle = "gminigun"
+wpnPriority = 0
+wpnCategory = "CANN"
+flashName = "gflamer_c.smokepuff"
+
+[CannonClass]
+shotDelay = 0.02
+

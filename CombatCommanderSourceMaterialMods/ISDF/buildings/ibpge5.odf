@@ -1,0 +1,28 @@
+[GameObjectClass]
+baseName = "ibpgen"
+geometryName = "ibpgen00.fbx"
+classLabel = "powerplant"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Power Generator"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 1.0
+AllowUndergroundSpawn = 1
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnired"
+lightHard2 = "hp_light_2"
+lightName2 = "omnired"
+lightHard3 = "hp_light_3"
+lightName3 = "omnired"
+lightHard4 = "hp_light_4"
+lightName4 = "omnired"
+
+armorClass = H
+
+[BuildingClass]
+soundAmbient = "ibpgen00.wav"

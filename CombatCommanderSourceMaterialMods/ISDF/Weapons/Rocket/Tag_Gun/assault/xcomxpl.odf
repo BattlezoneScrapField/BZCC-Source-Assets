@@ -1,0 +1,125 @@
+// =================
+// COMET EXPLOSION
+// =================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 6
+particleClass1 = "xcomxpl.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xcomxpl.DisperseSmoke"
+particleCount2 = 15
+particleVeloc2 = "80.0 60.0 80.0"
+
+particleClass3 = "xcomxpl.HullAsh"
+particleCount3 = 20
+particleVeloc3 = "110.0 90.0 110.0"
+
+particleClass4 = "xcomxpl.ShockSphere"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xcomxpl.LightFlare"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+particleClass6 = "xcomxpl.trail"
+particleCount6 = 8
+particleVeloc6 = "60.0 50.0 60.0"
+particleBias6 = "0.0 1.0 0.0"
+
+explSound = "xmv1.wav"
+damageRadius = 50.0
+
+damageValue(N) = 2000 // none
+damageValue(L) = 1500 // light
+damageValue(H) = 1500 // heavy
+
+damageValue(S) = 1700 // standard
+damageValue(D) = 2000 // deflection
+damageValue(A) = 1300 // absorbion
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "63 255 255 255"
+finishColor = "0 0 255 0"
+startRadius = 3.0
+finishRadius = 30.0
+animateTime = 1.0
+
+[DisperseSmoke]
+simulateBase = "sim_smoke"
+lifeTime = 4.0
+renderBase = "draw_twirl"
+textureName = "smoke2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "20 25 20 140"
+finishColor = "26 21 20 0"
+startRadius = 8.4
+finishRadius = 12.8
+animateTime = 4.0
+rotationRate = 8.0
+BottomInteractsWithTerrain = false
+
+[HullAsh]
+simulateBase = "sim_ember"
+lifeTime = 4.0
+renderBase = "draw_twirl"
+textureName = "spark.tga"
+textureBlend = "one one modulate"
+startColor = "127 63 0 255"
+finishColor = "255 63 0 0"
+startRadius = 0.2
+finishRadius = 0.1
+animateTime = 4.0
+BottomInteractsWithTerrain = false
+
+
+[LightFlare]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_twirl"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "182 114 230 255"
+finishColor = "182 114 230 0"
+startRadius = 60.0
+finishRadius = 2.0
+animateTime = 0.2
+rotationRate = 5.0
+BottomInteractsWithTerrain = false
+
+[ShockSphere]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "70 180 208 100"
+finishColor = "70 106 208 0"
+startRadius = 1.0
+finishRadius = 30.0
+animateTime = 0.2
+latitudeBands = 8
+longitudeSegments = 16
+
+[Trail]
+simulateBase = "sim_ember"
+lifeTime = 3.0
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureRate = 0.5
+textureBlend = "one one modulate"
+startColor = "255 200 60 255"
+finishColor = "185 69 154 0"
+startRadius = 0.04
+finishRadius = 0.0
+trailTime = 5.0
+segmentTime = 0.1 // remove to keep the trails forever

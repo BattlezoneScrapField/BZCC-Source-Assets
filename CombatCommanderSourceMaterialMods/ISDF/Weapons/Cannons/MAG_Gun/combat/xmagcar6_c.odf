@@ -1,0 +1,113 @@
+// ===================
+// MAG CANNON 6 VEHICLE HIT
+// ===================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xsv2.wav"
+
+damageRadius = 20.0
+
+damageValue(N) = 300 // none
+damageValue(L) = 150 // light
+damageValue(H) = 50 // heavy
+ 
+damageValue(S) = 150 // standard
+damageValue(D) = 300 // deflection
+damageValue(A) = 50 // absorbtion
+
+kickRadius = 20.0
+kickOmega = 0.0
+kickVeloc = 3.0
+
+particleTypes = 5
+
+particleClass1 = "xmagcar6_c.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleInherit1 = "0.5 0.5 0.5"
+
+particleClass2 = "xmagcar6_c.core2"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+particleInherit2 = "0.5 0.5 0.5"
+
+particleClass3 = "xmagcar6_c.puff"
+particleCount3 = 4
+particleVeloc3 = "5.0 5.0 5.0"
+particleInherit3 = "0.5 0.5 0.5"
+
+particleClass4 = "xmagcar6_c.splat"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+particleInherit4 = "0.5 0.5 0.5"
+
+particleClass5 = "xmagcar6_c.light"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+particleInherit5 = "0.5 0.5 0.5"
+
+[Core]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "blast.tga" // flame
+textureBlend = "one one modulate"
+startColor = "255 255 0 100"
+finishColor = "255 255 255 0"
+startRadius = 0.5
+finishRadius = 0.1
+animateTime = 1.0
+
+[Core2]
+simulateBase = "sim_smoke"
+lifeTime = 1.2
+renderBase = "draw_twirl"
+textureName = "flare.tga" // flame
+textureBlend = "one one modulate"
+startColor = "255 255 100 255"
+finishColor = "200 200 0 0"
+startRadius = 0.3
+finishRadius = 0.3
+animateTime = 1.2
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 1.3
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "155 155 155 0"
+startRadius = 0.5
+finishRadius = 2.5
+animateTime = 1.3
+rotaionRate = 10
+
+[Splat]
+simulateBase = "sim_smoke"
+lifeTime = 0.75
+renderBase = "draw_twirl"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 0 0"
+startRadius = 0.2
+finishRadius = 1.0
+animateTime = 0.75
+BottomInteractsWithTerrain = false
+
+[Light]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_light"
+startColor = "255 255 0 500"
+finishColor = "255 255 0 0"
+startRadius = 0.2
+finishRadius = 0.1
+animateTime = 0.3
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
+lensFlare = 0

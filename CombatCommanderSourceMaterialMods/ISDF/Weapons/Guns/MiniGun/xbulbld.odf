@@ -1,0 +1,49 @@
+// ===================
+// BULLET BUILDING HIT
+// ===================
+
+[ExplosionClass]
+classLabel = "explosion"
+explSound = "wmgr1.wav"
+damageRadius = 0.0
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+particleTypes = 4
+
+particleClass1 = "xbulgnd.ShardSprite"
+particleCount1 = 1 //2
+particleVeloc1 = "0.3 0.3 0.3"
+particleBias1 = "0.0 0.1 0.0"
+
+particleClass2 = "xbulgnd.Smoke"
+particleCount2 = 1 //2
+particleVeloc2 = "4.3 4.5 4.3"
+particleBias2 = "0.0 0.0 0.0"
+
+particleclass3 = "xbulbld.core"
+particleCount3 = 1
+particleVeloc3 = "13.3 13.3 13.3"
+particleBias3 = "0.0 2.0 0.0
+
+particleClass4 = "xbulgnd.Light"
+particleCount4 = 1
+particleVeloc4 = "0.3 0.3 0.3"
+particleBias4 = "0.0 0.1 0.0"
+
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_twirl"
+textureName = "bulhit.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.05
+finishRadius = 0.5
+animateTime = 0.2

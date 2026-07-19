@@ -1,0 +1,34 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gpummel_c"
+ordName = "pummel_a"
+wpnName = "Pummel"
+flashName = "gpummel_a.flash"
+fireSound = "pgun01.wav"
+wpnReticle = "gpummel"
+wpnCategory = "GUN"
+isAssault = 1
+aiRange = 75
+
+[CannonClass]
+shotDelay = 0.5
+salvoCount = 10
+salvoDelay = 0.0
+shotVariance = 0.5
+
+[Flash]
+renderBase = "draw_multi"
+renderCount = 6
+renderName1 = "gpummel_a.flash2"
+renderName2 = "gpummel_c.smokepuff"
+
+[Flash2]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 8.0
+finishRadius = 2.0
+animateTime = 0.1
+geomName = "g_sflash.xsi"

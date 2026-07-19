@@ -1,0 +1,26 @@
+[GameObjectClass]
+baseName = "ivcons"
+geometryName = "ivcons_startup.fbx"
+//geometryScale = 0.7 //closer size to fvcons
+classLabel = "I76Building"
+animCount = 1
+animName1 = "startup"
+animFile1 = "ivcons_startup.fbx"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 2000
+maxAmmo = 0
+unitName = "Constructor"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+ownsTerrain = 1
+canDetect = 1
+canInteract = 0
+
+CollisionBoxMinOffsetY = 0.3
+CollisionBoxMaxOffsetY = 0.4
+CollisionType = 5
+
+[BuildingClass]
+

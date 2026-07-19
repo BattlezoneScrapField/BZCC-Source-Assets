@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "satchelpack"
+geometryName = "igsatc00.fbx"
+geometryScale = 0.12
+wpnName = "Satchel"
+wpnIcon = "wire_igsatc%d.tga"
+fireSound = "satcfire.wav"
+wpnReticle = "gmortar"
+wpnLadder = "gmortar.L0"
+wpnCategory = "PACK"
+localAmmo = 1
+canSelect = false
+
+[SatchelPackClass]
+objectClass = "satchel1"
+shotDelay = 15.0

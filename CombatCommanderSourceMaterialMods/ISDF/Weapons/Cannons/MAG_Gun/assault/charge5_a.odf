@@ -1,0 +1,165 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 1.5
+xplGround = "xmaggnd5_a"
+xplVehicle = "xmagcar5_a"
+xplBuilding = "xmagcar5_a"
+
+renderName = "charge5_a.render"
+
+ammoCost = 200
+lifeSpan = 1.875 // 150m
+shotSpeed = 80.0
+
+damageValue(N) = 2125 // none // 850
+damageValue(L) = 1375 // light // 550
+damageValue(H) = 500 // heavy // 200
+
+damageValue(S) = 1375 // standard // 550
+damageValue(D) = 2125 // deflection // 850
+damageValue(A) = 625 // absorbtion // 250
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 9
+renderName1 = "charge5_a.light"
+renderName2 = "charge5_a.flame"
+renderName3 = "charge5_a.smoke"
+renderName4 = "charge5_a.trail"
+renderName5 = "charge5_a.smoke2"
+renderName6 = "charge5_a.sparkstrail"
+renderName7 = "charge5_a.energypuffa"
+renderName8 = "charge5_a.core"
+renderName9 = "charge5_a.flux"
+
+[Light]
+renderBase = "draw_light"
+startColor = "255 255 50 500" 
+finishColor = "255 255 50 500" 
+startRadius = 20.0
+finishRadius = 20.0
+lensflare = 0 
+
+[Core]
+renderBase = "draw_sprite"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "255 180 49 100"
+finishColor = "255 180 49 0"
+startRadius = 2.0
+finishRadius = 2.0
+
+[flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 150 50 200"
+finishColor = "255 120 23 0"
+startRadius = 1.0
+finishRadius = 0.5
+rotationRate = 10.0
+animateTime = 0.12
+emitDelay = 0.005 //0.002
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.4 0.4 0.4"
+emitInherit = "0.0 0.0 0.1"
+emitLife = 0.12
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke2.tga"
+textureBlend = "one one modulate"
+startColor = "255 160 0 31" 
+finishColor = "255 140 0 0" 
+startRadius = 0.4
+finishRadius = 1.5
+rotationRate = 10.0
+animateTime = 0.3
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 0.3
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 180 0 127" 
+finishColor = "255 120 0 0" 
+startRadius = 0.8
+finishRadius = 0.1
+TextureRate = 0.4
+TextureSpeed = 2.0
+segmentTime = 0.4
+
+[Smoke2]
+renderBase = "draw_twirl_trail"
+textureName = "smoke2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor =   "20 12 0 80" //"153 153 153 128"
+finishColor = "20 10 0 0"
+startRadius = 0.4
+finishRadius = 1.5
+animateTime = 1.0
+emitDelay = 0.04 //0.02
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.7 0.7 0.7"
+emitLife = 1.0
+
+[SparksTrail]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "19.0 19.0 19.0"
+emitLife = 0.2
+textureName = "spark2.tga"
+textureBlend = "one one modulate"
+startColor = "255 215 255 255"
+finishColor = "255 150 20 0"
+startRadius = 0.13
+finishRadius = 0.06
+animateTime = 0.2
+rotationRate = 2.0
+BottomInteractsWithTerrain = false
+
+[EnergyPuffA]
+renderBase = "draw_emit"
+emitName = "charge6_c.EnergyPuffB"
+emitVariance = "10.0 10.0 0.0"
+emitDelay = 0.05
+emitInherit = "1.0 1.0 1.0"
+
+	[EnergyPuffB]
+	simulateBase = "sim_smoke"
+	lifeTime = 0.1
+	renderBase = "draw_bolt"
+	textureName = "trail2.tga"
+	textureBlend = "one one modulate"
+	textureRate = 0.8
+	texturespeed = -16
+	startColor = "255 255 60 80"
+	finishColor = "255 150 0 0"
+	startRadius = 0.05
+	finishRadius = 0.008
+	segmentLength = 0.6
+	segmentVariance = "2.0 2.0 0.0"
+	animateTime = 0.1
+	
+[flux]
+renderBase = "draw_twirl_trail"
+textureName = "sonicboom.tga"
+textureBlend = "one one modulate"
+startColor = "255 20 20 255"
+finishColor = "255 10 10 0"
+startRadius = 0.2
+finishRadius = 4.5
+rotationRate = 3.0
+animateTime = 0.06
+emitDelay = 0.01 //0.005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "4.0 4.0 4.0"
+emitInherit = "1.0 1.0 1.0"
+emitLife = 0.06
+BottomInteractsWithTerrain = false

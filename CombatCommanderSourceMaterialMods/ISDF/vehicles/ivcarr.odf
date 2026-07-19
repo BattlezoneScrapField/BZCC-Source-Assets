@@ -1,0 +1,99 @@
+[GameObjectClass]
+classLabel = "i76building"
+geometryName = "ivcarr00_crash.fbx"
+animCount = 1
+animName1 = "crash"
+animFile1 = "ivcarr00_crash.fbx"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 10000
+maxAmmo = 0
+unitName = "Carrier"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+ownsTerrain = 0
+canDetect = 0
+canInteract = 0
+canCollide = 0
+armorClass = H
+collisionRadius = 0
+alwaysClip = 1
+
+effectHard1 = "hp_trail_1"
+effectName1 = "ivcarr.render"
+effectHard2 = "hp_trail_2"
+effectName2 = "ivcarr.trail"
+effectHard3 = "hp_trail_2"
+effectName3 = "ivcarr.render"
+
+effectHard4 = "hp_emit_1"
+effectName4 = "ivcarr.render"
+effectHard5 = "hp_emit_2"
+effectName5 = "ivcarr.render"
+effectHard6 = "hp_emit_3"
+effectName6 = "ivcarr.render"
+
+[BuildingClass]
+justFlat = 1
+
+[trail]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.05
+emitDelayVar = 0.03
+emitVelocity = "0.0 0.0 10.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = .5
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "0 100 255 127"
+finishColor = "0 100 255 0"
+startRadius = 15
+finishRadius = 1
+animateTime = .5
+rotationRate = 2.0
+maxDist	= 2000.0f
+maxRadii = 2000.0f
+
+[render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivcarr.smokeemitter"
+renderName2 = "ivcarr.flameemitter"
+
+[SmokeEmitter]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.05
+emitDelayVar = 0.03
+emitVelocity = "-5.0 5.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 2.0
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 128"
+finishColor = "0 0 0 0"
+startRadius = 4.0
+finishRadius = 7.0
+animateTime = 2.0
+rotationRate = 2.0
+maxDist	= 2000.0f
+
+[FlameEmitter]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.03
+emitDelayVar = 0.02
+emitVelocity = "-5.0 5.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.5 0.5 0.5"
+emitLife = 1.0
+textureName = "fire.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 128"
+finishColor = "255 0 0 0"
+startRadius = 4.0
+finishRadius = 1.0
+animateTime = 1.0
+rotationRate = 10.0
+maxDist	= 2000.0f

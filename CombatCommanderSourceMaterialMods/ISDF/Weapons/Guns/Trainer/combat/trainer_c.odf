@@ -1,0 +1,19 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+xplGround = "xbulgnd"
+xplVehicle = "xbulcar"
+xplBuilding = "xbulbld"
+renderName = "minigun_c.render"
+
+ammoCost = 1
+lifeSpan = 0.333 // 99.9m
+shotSpeed = 300.0
+
+damageValue(N) = 1 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion

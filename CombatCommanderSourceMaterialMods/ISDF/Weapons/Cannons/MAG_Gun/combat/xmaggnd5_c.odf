@@ -1,0 +1,174 @@
+// ==================
+// MAG CANNON 5 GROUND HIT
+// ==================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xbombf.wav"
+
+damageRadius = 30.0
+
+damageValue(N) = 300 // none
+damageValue(L) = 150 // light 
+damageValue(H) = 50 // heavy 
+
+damageValue(S) = 150 // standard
+damageValue(D) = 300 // deflection
+damageValue(A) = 50 // absorbtion
+
+particleTypes = 9
+
+particleClass1 = "xmaggnd5_c.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xmaggnd5_c.puff"
+particleCount2 = 4
+particleVeloc2 = "4.0 4.0 4.0"
+
+particleClass3 = "xmaggnd5_c.thrust"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xmaggnd5_c.splat"
+particleCount4 = 2
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xmaggnd5_c.light"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+particleClass6 = "xmaggnd5_c.shock"
+particleCount6 = 1
+particleVeloc6 = "0.0 0.0 0.0"
+
+particleClass7 = "xmaggnd5_c.char"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+
+particleClass8 = "xmaggnd5_c.char2"
+particleCount8 = 2
+particleVeloc8 = "0.0 0.0 0.0"
+
+particleClass9 = "xmaggnd5_c.posroll"
+particleCount9 = 4
+particleVeloc9 = "6.0 0. 6.0"
+
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "blast.tga" // flame
+textureBlend = "one one modulate"
+startColor = "255 255 0 155"
+finishColor = "155 155 155 0"
+startRadius = 3.5
+finishRadius = 1.0
+animateTime = 1.0
+BottomInteractsWithTerrain = false
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "155 155 155 0"
+startRadius = 0.5
+finishRadius = 4.0
+animateTime = 2.0
+
+[Thrust]
+simulateBase = "sim_null"
+lifeTime = 2.5
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 1.0
+textureName = "ground.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "155 155 150 255"
+finishColor = "100 50 50 0"
+startRadius = 0.1
+finishRadius = 3.0
+animateTime = 2.5
+
+[Splat]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_planar"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 0"
+startRadius = 0.1
+finishRadius = 3.0
+animateTime = 1.0
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 2.0
+renderBase = "draw_light"
+startColor = "255 255 0 855"
+finishColor = "255 255 255 0"
+startRadius = 0.4
+finishRadius = 0.1
+animateTime = 2.0
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
+lensFlare = 0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.25
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = " 255 255 0 155"
+finishColor = "155 155 0 0"
+startRadius = 1.0
+finishRadius = 4.0
+animateTime = 0.25
+latitudeBands = 8
+longitudeSegments = 16
+
+[Char]
+simulateBase = "sim_null"
+lifeTime = 10.0
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "100 100 100 255"
+finishColor = "10 10 10 0"
+startRadius = 4.0
+finishRadius = 2.0
+animateTime = 10.0
+
+[Char2]
+simulateBase = "sim_null"
+lifeTime = 3.0
+renderBase = "draw_planar"
+textureName = "blast.tga"
+textureBlend = "one one modulate"
+startColor = " 100 100 0 255"
+finishColor = "255 255 0 0"
+startRadius = 7.0
+finishRadius = 0.5
+animateTime = 3.0
+
+[Posroll]
+simulateBase = "sim_dust"
+lifeTime = 3.0
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "200 200 200 105"
+finishColor = "100 100 100 0"
+startRadius = 1.5
+finishRadius = 0.5
+animateTime = 3.0
+rotationRate = 10.0
+useTerrainColor = 0.9

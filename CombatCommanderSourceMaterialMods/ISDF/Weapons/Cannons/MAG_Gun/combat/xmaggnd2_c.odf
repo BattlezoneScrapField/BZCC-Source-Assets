@@ -1,0 +1,105 @@
+// ==================
+// MAG CANNON 2 GROUND HIT
+// ==================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xbombf.wav"
+damageRadius = 0.0
+
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+particleTypes = 5
+
+particleClass1 = "xmaggnd2_c.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xmaggnd2_c.puff"
+particleCount2 = 4
+particleVeloc2 = "4.0 4.0 4.0"
+
+particleClass3 = "xmaggnd2_c.shock"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xmaggnd2_c.splat"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xmaggnd2_c.Light"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.7 0.0"
+particleBias5 = "0.0 0.5 0.0"
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "blast.tga" // flame
+textureBlend = "one one modulate"
+startColor = "255 255 255 155"
+finishColor = "255 0 255 0"
+startRadius = 1.5
+finishRadius = 0.5
+animateTime = 1.0
+BottomInteractsWithTerrain = false
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 1.5
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 255"
+finishColor = "100 5 100 0"
+startRadius = 0.5
+finishRadius = 2.5
+animateTime = 1.5
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 1.0
+textureName = "ground.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "255 153 255 255"
+finishColor = "30 30 30 0"
+startRadius = 0.1
+finishRadius = 1.2
+animateTime = 1.0
+
+[Splat]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_planar"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 255"
+finishColor = "255 0 255 0"
+startRadius = 0.1
+finishRadius = 2.0
+animateTime = 0.5
+
+[Light]
+simulateBase = "sim_smoke"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "200 50 50 350"
+finishColor = "255 0 255 0"
+startRadius = 25.0
+finishRadius = 10.0
+animateTime = 0.2
+attenuateConstant = 1.0
+attenuateLinear = 0.0
+attenuateQuadratic = 15.0
+lensFlare = 0

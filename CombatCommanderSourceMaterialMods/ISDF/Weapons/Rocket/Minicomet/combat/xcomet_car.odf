@@ -1,0 +1,75 @@
+// ===================
+// MISSILE VEHICLE HIT
+// ===================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+
+explSound = "xsv2.wav"
+
+damageRadius = 0.0
+
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+particleTypes = 10
+
+
+particleClass1 = "xcomet_gnd.ShockSphere"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleInherit1 = "0.5 0.5 0.5"
+
+particleClass2 = "xcomet_gnd.LightFlash"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+particleInherit2 = "0.5 0.5 0.5"
+
+particleClass3 = "xcomet_gnd.LightFlare"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleInherit3 = "0.5 0.5 0.5"
+
+particleClass4 = "xcomet_gnd.Ash"
+particleCount4 = 7
+particleVeloc4 = "30.0 30.0 30.0"
+particleInherit4 = "0.8 0.8 0.8"
+
+particleClass5 = "xcomet_gnd.blackChunks"
+particleCount5 = 6
+particleVeloc5 = "30.0 30.0 30.0"
+particleInherit5 = "0.8 0.8 0.8"
+
+particleClass6 = "xcomet_gnd.Trails"
+particleCount6 = 8
+particleVeloc6 = "30.0 30.0 30.0"
+particleInherit6 = "1.0 1.0 1.0"
+
+particleClass7 = "xcomet_gnd.FlameHeat"
+particleCount7 = 4
+particleVeloc7 = "5.0 5.0 5.0"
+particlePosVar7 = "3.0 3.0 3.0"
+particleInherit7 = "0.5 0.5 0.5"
+
+particleClass8 = "xcomet_gnd.Flames"
+particleCount8 = 11
+particleVeloc8 = "8.7 8.7.0 8.7"
+particlePosVar8 = "3.0 3.0 3.0"
+particleInherit8 = "0.5 0.5 0.5"
+
+particleClass9 = "xcomet_gnd.ExplodeSprites"
+particleCount9 = 4
+particleVeloc9 = "2.7 2.7 2.7"
+particlePosVar9 = "2.0 2.0 2.0"
+particleInherit9 = "0.5 0.5 0.5"
+
+particleClass10 = "xcomet_gnd.SmokePuffCloud"
+particleCount10 = 4
+particleVeloc10 = "20.0 20.0 20.0"
+particlePosVar10 = "3.0 3.0 3.0"
+particleInherit10 = "0.25 0.25 0.25"

@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gspstab_c"
+ordName = "spstab_a"
+wpnName = "SP-Stab"
+fireSound = "spstab01.wav"
+wpnReticle = "gspstab"
+wpnCategory = "CANN"
+isAssault = 1
+aiRange = 150
+
+[CannonClass]
+shotDelay = 1.75
+shotAlternate = 1
+

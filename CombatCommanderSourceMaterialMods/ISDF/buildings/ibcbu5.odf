@@ -1,0 +1,30 @@
+[GameObjectClass]
+baseName = "ibcbun"
+geometryName = "ibcbun00.fbx"
+classLabel = "commtower"
+collisionRadius = 1.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Relay Bunker"
+aiName = "CommTowerProcess"
+aiName2 = "CommTowerProcess"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+AllowUndergroundSpawn = 1
+
+armorClass = H
+
+requireCount = 1
+requireName1 = "ibpgen"
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_blue_nf"
+
+[BuildingClass]
+
+[CommTowerClass]
+rangeScan = 300
+periodScan = 0.0

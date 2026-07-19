@@ -1,0 +1,48 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+xplGround = "xchaingnd_c"
+xplVehicle = "xchaincar_c"
+xplBuilding = "xchainbld_c"
+
+renderName = "splinter.render"
+
+ammoCost = 1
+lifeSpan = 0.5
+shotSpeed = 200.0
+
+damageValue(N) = 15
+damageValue(L) = 9
+damageValue(H) = 3
+
+damageValue(S) = 9
+damageValue(D) = 1
+damageValue(A) = 15
+
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "splinter.BulletTrail"
+renderName2 = "splinter.SmokeyTrail"
+
+[BulletTrail]
+renderBase = "draw_tracer"
+textureBlend = "one one modulate"
+textureName = "spark2.tga"
+startColor = "232 155 64 250"
+finishColor = "232 155 64 0"
+startRadius = 0.25
+finishRadius = 0.25
+tracerLength = 3.6
+
+[SmokeyTrail]
+renderBase = "draw_trail"
+textureName = "strail.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureRate = 0.3
+startColor = "255 128 64 40"
+finishColor = "105 105 107 0"
+startRadius = 0.2
+finishRadius = 0.03
+segmentTime = 0.3

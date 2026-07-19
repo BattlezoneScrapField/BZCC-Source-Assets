@@ -1,0 +1,28 @@
+[GameObjectClass]
+classLabel = "i76sign"
+geometryName = "ibspot00.fbx"
+animCount = 1
+animName1 = "loop"
+animFile1 = "ibspot00.fbx"
+RunAnimation = "loop"
+RunAnimIsLooped = true
+collisionRadius = 0.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 100
+maxAmmo = 0
+unitName = "Spotlight"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+ownsTerrain = 1
+armorClass = H
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotwhite3"
+
+[BuildingClass]
+

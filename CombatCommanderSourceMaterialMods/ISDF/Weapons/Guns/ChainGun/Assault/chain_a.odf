@@ -1,0 +1,48 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+
+xplGround = "xchaingnd_a"
+xplVehicle = "xchaincar_a"
+xplBuilding = "xchainbld_a"
+
+renderName = "chain_a.render"
+
+ammoCost = 2.5
+lifeSpan = 0.4 // 120m
+shotSpeed = 300.0
+
+damageValue(N) = 15 // none // 300
+damageValue(L) = 13.5 // light // 270
+damageValue(H) = 12.5 // heavy // 250
+
+damageValue(S) = 13.5 // standard // 270
+damageValue(D) = 10 // deflection // 200
+damageValue(A) = 15 // absorbtion // 300
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "chain_a.BulletTrail"
+renderName2 = "chain_a.SmokeyTrail"
+
+[BulletTrail]
+renderBase = "draw_tracer"
+textureBlend = "one one modulate"
+textureName = "spark2.tga"
+startColor = "232 155 64 250"
+finishColor = "232 155 64 0"
+startRadius = 0.35
+finishRadius = 0.35
+tracerLength = 5.6
+
+[SmokeyTrail]
+renderBase = "draw_trail"
+textureName = "strail.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureRate = 0.3
+startColor = "255 108 44 40"
+finishColor = "105 85 87 0"
+startRadius = 0.2
+finishRadius = 0.03
+segmentTime = 0.3

@@ -1,0 +1,19 @@
+[OrdnanceClass]
+classLabel = "fafmsl_c"
+
+ammoCost = 3
+lifeSpan = 3.0 // 150m
+shotSpeed = 50.0
+
+damageValue(N) = 20 // none
+damageValue(L) = 20 // light
+damageValue(H) = 20 // heavy
+
+damageValue(S) = 20 // standard
+damageValue(D) = 20 // deflection
+damageValue(A) = 20 // absorbtion
+
+[MissileClass]
+omegaTurn = 0.5
+
+[ThermalMissileClass]

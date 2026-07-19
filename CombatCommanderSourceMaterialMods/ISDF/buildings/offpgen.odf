@@ -1,0 +1,25 @@
+[GameObjectClass]
+baseName = "ibpgen"
+geometryName = "ibpgen00.fbx"
+classLabel = "i76building"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Power Generator"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 1.0
+AllowUndergroundSpawn = true
+
+armorClass = H
+
+[BuildingClass]
+
+[PoweredBuildingClass]
+detectRange = 50
+
+[Lod1]
+//geometryName = "ibpgenL1.fbx" ;geometry for lod1
+//distance = 64                    ;bsphere under 200 pixel => switch to lod1

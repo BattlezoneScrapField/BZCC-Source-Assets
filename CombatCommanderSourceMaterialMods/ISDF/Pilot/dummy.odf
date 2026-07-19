@@ -1,0 +1,34 @@
+[GameObjectClass]
+classLabel = "i76building"
+geometryScale = 1
+geometryName = "ispilo_rifle_talkloop.fbx"
+animCount = 1
+animName1 = "speak"
+animFile1 = "ispilo_rifle_talkloop.fbx"
+scrapCost = 0
+scrapValue = 0
+pilotCost = 1
+maxHealth = 100
+maxAmmo = 100
+addAmmo = 10
+unitName = "Pilot"
+aiName = ""
+aiName2 = ""
+heatSignature = 0.2
+imageSignature = 0.2
+radarSignature = 0.1
+ownsTerrain = 1
+explosionName = "xprsxpl"
+
+weaponHard1 = "HP_HAND_1"
+weaponName1 = ""
+weaponHard2 = ""
+weaponName2 = ""
+
+turretCount = 6
+turretName1 = "torso"
+turretName2 = "head"
+turretName3 = "larm"
+turretName4 = "rarm"
+turretName5 = "eyebone"
+turretName6 = "hp_eyepoint_1"

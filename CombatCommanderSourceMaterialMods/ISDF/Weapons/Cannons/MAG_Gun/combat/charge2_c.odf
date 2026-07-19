@@ -1,0 +1,94 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 0.5
+xplGround = "xmaggnd2_c"
+xplVehicle = "xmagcar2_c"
+xplBuilding = "xmagcar2_c"
+
+renderName = "charge2_c.render"
+
+ammoCost = 5
+lifeSpan = 0.5 // 75m
+shotSpeed = 150.0
+
+damageValue(N) = 75 // none // 450
+damageValue(L) = 50 // light // 300
+damageValue(H) = 17.5 // heavy // 105
+
+damageValue(S) = 50 // standard // 300
+damageValue(D) = 75 // deflection // 450
+damageValue(A) = 17.5 // absorbtion // 105
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "charge2_c.light"
+renderName2 = "charge2_c.flame"
+renderName3 = "charge2_c.smoke"
+renderName4 = "charge2_c.trail"
+renderName5 = "charge2_c.smoke2"
+
+[Light]
+renderBase = "draw_light"
+startColor = "255 50 10 350" 
+finishColor = "255 50 10 350" 
+startRadius = 10.0
+finishRadius = 10.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 50 0 255"
+finishColor = "255 0 255 0"
+startRadius = 0.2
+finishRadius = 0.1
+rotationRate = 10.0
+animateTime = 0.07
+emitDelay = 0.0015 //0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 0.07
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "blast.tga"
+textureBlend = "one one modulate"
+startColor = "255 50 0 31"
+finishColor = "255 0 255 0"
+startRadius = 0.2
+finishRadius = 0.5
+rotationRate = 10.0
+animateTime = 0.07
+emitDelay = 0.0035
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 0.07
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 50 0 127"
+finishColor = "255 0 255 0"
+startRadius = 0.1
+finishRadius = 0.0
+segmentTime = 0.15
+TextureRate = 0.4
+TextureSpeed = 5.0
+
+[Smoke2]
+renderBase = "draw_twirl_trail"
+textureName = "smoke2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor =   "25 10 12 60" //"153 153 153 128"
+finishColor = "25 5 12 0"
+startRadius = 0.2
+finishRadius = 1.0
+animateTime = 1.0
+emitDelay = 0.04
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.7 0.7 0.7"
+emitLife = 1.0

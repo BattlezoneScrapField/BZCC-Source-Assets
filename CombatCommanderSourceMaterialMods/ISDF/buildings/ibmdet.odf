@@ -1,0 +1,22 @@
+[GameObjectClass]
+geometryName = "ibgtow00.fbx"
+classLabel = "sensor"
+scrapCost = 8
+scrapValue = 3
+maxHealth = 2000
+maxAmmo = 0
+unitName = "Motion Sensor"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 1.0
+
+armorClass = H
+
+requireCount = 1
+requireName1 = "ibtcen"
+
+[BuildingClass]
+
+[MotionSensorClass]
+rangeScan = 200.0

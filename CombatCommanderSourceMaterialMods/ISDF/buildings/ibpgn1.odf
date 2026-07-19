@@ -1,0 +1,41 @@
+[GameObjectClass]
+baseName = "ibpgen"
+classLabel = "ibpgen"
+animCount = 0
+scrapCost = 0
+maxHealth = 5000
+unitName = "Power Generator"
+
+/////// PROVIDES ///////////////////
+provideCount = 3
+provideName2 = "ibpgn1"
+provideName3 = "VIRTUAL_CLASS_POWERPLANT"
+
+/////// LIGHTS & EFFECTS /////
+lightHard1 = "hp_light_1"
+lightName1 = "omniblue"
+lightHard2 = "hp_light_2"
+lightName2 = "omnired"
+lightHard3 = "hp_light_3"
+lightName3 = "omniblue"
+lightHard4 = "hp_light_4"
+lightName4 = "omnired"
+lightHard5 = "hp_light_5"
+lightName5 = "o_lblue_nf"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "emit_cyanblink"
+effectHard2 = "hp_emit_2"
+effectName2 = "emit_blueblink"
+effectHard3 = "hp_emit_3"
+effectName3 = "emit_redblink"
+effectHard4 = "hp_emit_4"
+effectName4 = "emit_yellowblink"
+effectHard5 = "hp_emit_5"
+effectName5 = "emit_redblink"
+
+[BuildingClass]
+
+[PoweredBuildingClass]
+
+[Lod1]
