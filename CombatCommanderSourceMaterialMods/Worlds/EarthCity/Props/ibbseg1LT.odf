@@ -1,6 +1,0 @@
-[GameObjectClass]
-baseName = "ibbseg"
-geometryName = "ibbsegLT01.fbx"
-classLabel = "ibbseg1"
-
-[BuildingClass]

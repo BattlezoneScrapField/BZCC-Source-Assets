@@ -1,7 +1,0 @@
-[GameObjectClass]
-geometryName = "mepool01.fbx"
-classLabel = "tepool01"
-
-[BuildingClass]
-
-[DepositClass]
